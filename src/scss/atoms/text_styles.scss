@@ -1,18 +1,29 @@
-@mixin body {
+@use 'breakpoints' as break;
+
+@mixin primary {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.1875rem;
 }
-@mixin description {
+
+@mixin secondary {
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.75rem;
 }
+
+@mixin small {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
 @mixin button {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.5rem;
 }
+
 @mixin select {
   font-size: 0.75rem;
   line-height: 0.875rem;
@@ -20,10 +31,39 @@
   letter-spacing: 0.04em;
   font-weight: 700;
 }
+
 @mixin logo {
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.01em;
   line-height: 1.375rem;
   font-family: "Montserrat", sans-serif;
+}
+
+@mixin h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.438rem;
+  font-family: "Montserrat", sans-serif;
+  @media (max-width: break.$mobile) {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+  }
+}
+
+@mixin h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  @media (max-width: break.$mobile) {
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.0625rem;
+  }
+}
+
+@mixin h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
 }
