@@ -1,0 +1,6 @@
+@use 'atoms/text_styles' as text;
+@use 'atoms/colors' as color;
+
+.heading {
+  @include text.body;
+}
