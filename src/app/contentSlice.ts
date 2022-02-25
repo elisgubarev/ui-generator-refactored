@@ -1,4 +1,5 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {RootState} from './store';
 
 export interface AppState {
     type: number,
@@ -17,7 +18,7 @@ const initialState: AppState = {
 }
 
 export const contentSlice = createSlice({
-    name: 'app',
+    name: 'content',
     initialState,
     reducers: {
         changeType: (state, action: PayloadAction<number>) => {
