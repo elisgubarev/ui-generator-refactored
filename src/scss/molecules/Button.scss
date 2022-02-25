@@ -1,0 +1,60 @@
+@use '../atoms/colors' as color;
+@use '../atoms/text_styles' as text;
+@use '../atoms/shadows' as shadow;
+@use '../atoms/variables' as var;
+
+@mixin setColorScheme($background, $text, $border) {
+  background-color: $background;
+  color: $text;
+  border: 2px solid $border;
+}
+
+.button {
+  padding: 12px 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  user-select: none;
+  cursor: pointer;
+  @include shadow.button;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &__icon {
+    margin-right: 10px;
+    max-width: 12px;
+  }
+
+  &__text {
+    @include text.button;
+  }
+
+  transition: color var.$animation-duration var.$easing,
+  background-color var.$animation-duration var.$easing,
+  border-color var.$animation-duration var.$easing,
+  box-shadow var.$animation-duration var.$easing,
+  transform var.$animation-duration var.$easing;
+}
+
+.button_download {
+  @include setColorScheme(color.$neutral-1, color.$white, color.$neutral-1);
+
+  &:hover {
+    background-color: color.$black;
+    border-color: color.$black;
+    @include shadow.button-hover;
+  }
+}
+
+.button_link {
+  @include setColorScheme(color.$white, color.$accent, color.$accent);
+
+  &:hover {
+    color: color.$accent-hover;
+    border-color: color.$accent-hover;
+    @include shadow.button-hover;
+  }
+}

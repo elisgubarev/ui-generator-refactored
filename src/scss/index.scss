@@ -1,5 +1,16 @@
-@use './elements/Button';
+@use 'molecules/Button';
 
 body {
   font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+//for testing
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  column-gap: 32px;
 }
