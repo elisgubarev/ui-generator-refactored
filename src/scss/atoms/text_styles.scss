@@ -1,69 +1,74 @@
 @use 'breakpoints' as break;
 
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
 @mixin primary {
-  font-size: 1rem;
+  font-size: toRem(16);
   font-weight: 400;
-  line-height: 1.1875rem;
+  line-height: toRem(19);
 }
 
 @mixin secondary {
-  font-size: 0.875rem;
+  font-size: toRem(14);
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: toRem(28);
 }
 
 @mixin small {
-  font-size: 0.8rem;
+  font-size: toRem(12.8);
   font-weight: 400;
-  line-height: 1.6rem;
+  line-height: toRem(25.6);
 }
 
 @mixin button {
-  font-size: 0.875rem;
+  font-size: toRem(14);
   font-weight: 700;
-  line-height: 1.5rem;
+  line-height: toRem(24);
 }
 
 @mixin select {
-  font-size: 0.75rem;
-  line-height: 0.875rem;
+  font-size: toRem(12);
+  line-height: toRem(14);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 700;
 }
 
 @mixin logo {
-  font-size: 1.125rem;
+  font-size: toRem(18);
   font-weight: 700;
   letter-spacing: 0.01em;
-  line-height: 1.375rem;
+  line-height: toRem(22);
   font-family: "Montserrat", sans-serif;
 }
 
 @mixin h1 {
-  font-size: 2rem;
+  font-size: toRem(32);
   font-weight: 700;
-  line-height: 2.438rem;
+  line-height: toRem(39);
   font-family: "Montserrat", sans-serif;
   @media (max-width: break.$mobile) {
-    font-size: 1.5rem;
-    line-height: 1.813rem;
+    font-size: toRem(24);
+    line-height: toRem(29);
   }
 }
 
 @mixin h2 {
-  font-size: 2rem;
+  font-size: toRem(32);
   font-weight: 400;
-  line-height: 3rem;
+  line-height: toRem(48);
   @media (max-width: break.$mobile) {
-    font-size: 1.375rem;
+    font-size: toRem(22);
     font-weight: 400;
-    line-height: 2.0625rem;
+    line-height: toRem(33);
   }
 }
 
 @mixin h3 {
-  font-size: 1rem;
+  font-size: toRem(16);
   font-weight: 700;
-  line-height: 1rem;
+  line-height: toRem(16);
 }
