@@ -1,0 +1,14 @@
+$animation-duration: 0.2s;
+$easing: ease;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin inlineFlexCenter {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

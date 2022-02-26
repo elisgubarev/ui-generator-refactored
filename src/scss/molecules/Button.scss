@@ -1,7 +1,7 @@
 @use '../atoms/colors' as color;
 @use '../atoms/text_styles' as text;
 @use '../atoms/shadows' as shadow;
-@use '../atoms/variables' as var;
+@use '../atoms/global';
 
 @mixin setColorScheme($background, $text, $border) {
   background-color: $background;
@@ -10,18 +10,12 @@
 }
 
 .button {
+  @include global.inlineFlexCenter;
+  @include shadow.button;
   padding: 12px 24px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 4px;
   user-select: none;
   cursor: pointer;
-  @include shadow.button;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
 
   &__icon {
     margin-right: 10px;
@@ -32,11 +26,15 @@
     @include text.button;
   }
 
-  transition: color var.$animation-duration var.$easing,
-  background-color var.$animation-duration var.$easing,
-  border-color var.$animation-duration var.$easing,
-  box-shadow var.$animation-duration var.$easing,
-  transform var.$animation-duration var.$easing;
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  transition: color global.$animation-duration global.$easing,
+  background-color global.$animation-duration global.$easing,
+  border-color global.$animation-duration global.$easing,
+  box-shadow global.$animation-duration global.$easing,
+  transform global.$animation-duration global.$easing;
 }
 
 .button_download {

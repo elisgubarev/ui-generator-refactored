@@ -16,11 +16,13 @@ const SwitcherButton: FC<ItemProps> = (props) => {
     }
 
     return (
-        <button className={`type-switcher__button 
-        ${isSelected() ? "type-switcher__active" : ""}`}
+        <button className={`type-picker__button 
+        ${isSelected() ? "type-picker__button_active" : ""}`}
                 onClick={props.onClick}
         >
-            {props.children}
+            <span className="type-picker__text">
+                {props.children}
+            </span>
         </button>
     );
 }
@@ -29,7 +31,7 @@ type Props = {
     className?: string;
 }
 
-const TypeSwitcher: FC<Props> = (props) => {
+const TypePicker: FC<Props> = (props) => {
     const stateType = useSelector((state: RootState) => state.content.type);
     const dispatch = useDispatch();
 
@@ -41,8 +43,8 @@ const TypeSwitcher: FC<Props> = (props) => {
     }
 
     return (
-        <div className={composeClassList("type-switcher", props.className)}>
-            <div className="type-switcher__wrapper">
+        <div className={composeClassList("type-picker", props.className)}>
+            <div className="type-picker__wrapper">
                 <SwitcherButton id={0}
                                 selected={selected}
                                 onClick={() => handleClick(0)}
@@ -60,4 +62,4 @@ const TypeSwitcher: FC<Props> = (props) => {
     );
 }
 
-export default TypeSwitcher;
+export default TypePicker;
