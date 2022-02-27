@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../components/molecules/Button'
 import TypePicker from "../components/molecules/TypePicker";
 import CategoryPicker from "../components/molecules/CategoryPicker";
+import ColorPicker from '../components/molecules/ColorPicker';
 
 
 function App() {
@@ -20,11 +21,15 @@ function App() {
                 >
                     Try it for free
                 </Button>
-                <TypePicker/>
+                <TypePicker />
             </div>
-            <br/>
+            <br />
             <div className={"app"}>
-                <CategoryPicker/>
+                <CategoryPicker />
+            </div>
+            <br />
+            <div className='app'>
+                <ColorPicker />
             </div>
 
         </>
