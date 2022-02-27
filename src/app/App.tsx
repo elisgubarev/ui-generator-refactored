@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../elements/molecules/Button'
-import TypePicker from "../elements/molecules/TypePicker";
-import CategoryPicker from "../elements/molecules/CategoryPicker";
+import Button from '../components/molecules/Button'
+import TypePicker from "../components/molecules/TypePicker";
+import CategoryPicker from "../components/molecules/CategoryPicker";
 
 
 function App() {
