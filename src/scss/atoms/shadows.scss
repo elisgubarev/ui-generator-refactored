@@ -1,9 +1,11 @@
 @mixin button {
-  box-shadow: 0 2px 4px rgba(136, 144, 194, 0.2),
-  0 5px 15px rgba(37, 44, 97, 0.15);
+  box-shadow: 0 2px 4px rgba(136, 144, 194, 0.2), 0 5px 15px rgba(37, 44, 97, 0.15);
 }
 
 @mixin button-hover {
-  box-shadow: 0 3px 8px rgba(136, 144, 194, 0.25),
-  0 7px 21px rgba(37, 44, 97, 0.2);
+  box-shadow: 0 3px 8px rgba(136, 144, 194, 0.25), 0 7px 21px rgba(37, 44, 97, 0.2);
+}
+
+@mixin color-inner {
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }

@@ -1,6 +1,8 @@
-@use 'molecules/Button';
-@use 'molecules/TypePicker';
-@use 'molecules/CategoryPicker';
+@use "molecules/Button";
+@use "molecules/TypePicker";
+@use "molecules/CategoryPicker";
+@use "molecules/ColorPicker.scss";
+@use "molecules/DarkPicker.scss";
 
 body {
   font-family: "Lato", sans-serif;

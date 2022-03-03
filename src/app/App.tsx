@@ -3,6 +3,7 @@ import Button from '../components/molecules/Button'
 import TypePicker from "../components/molecules/TypePicker";
 import CategoryPicker from "../components/molecules/CategoryPicker";
 import ColorPicker from '../components/molecules/ColorPicker';
+import DarkPicker from '../components/molecules/DarkPicker';
 
 
 function App() {
@@ -31,6 +32,11 @@ function App() {
             <div className='app'>
                 <ColorPicker />
             </div>
+            <br />
+            <div className='app'>
+                <DarkPicker />
+            </div>
+            <br />
 
         </>
     );
