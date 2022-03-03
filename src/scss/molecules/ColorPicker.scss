@@ -1,0 +1,46 @@
+@use "../atoms/colors.scss" as color;
+@use "../atoms/global.scss";
+@use "../atoms/shadows.scss" as shadow;
+
+.color-picker {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -16px;
+        margin-bottom: -24px;
+    }
+
+    &__button {
+        @include global.flexCenter;
+        @include shadow.color-inner;
+        margin-right: 16px;
+        margin-bottom: 24px;
+        width: 32px;
+        height: 32px;
+        border-radius: 7px;
+        cursor: pointer;
+        user-select: none;
+
+        transition: transform global.$animation-fast global.$easing;
+    }
+
+    &__icon {
+        opacity: 0;
+        font-size: 20px;
+        color: color.$white;
+
+        transition: color global.$animation-fast global.$easing, opacity global.$animation-fast global.$easing;
+    }
+}
+
+.color-picker__icon_black {
+    color: color.$neutral-1;
+}
+
+.color-picker__button_active {
+    transform: scale(0.8);
+
+    .color-picker__icon {
+        opacity: 1;
+    }
+}

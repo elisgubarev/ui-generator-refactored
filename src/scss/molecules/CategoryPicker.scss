@@ -1,0 +1,41 @@
+@use "../atoms/colors.scss" as color;
+@use "../atoms/global.scss";
+
+.category-picker {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -8px;
+        margin-bottom: -24px;
+    }
+
+    &__button {
+        @include global.flexCenter;
+        margin-right: 8px;
+        margin-bottom: 24px;
+        padding: 12px 24px;
+        border-radius: 10px;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: color.$accent-opacity;
+        }
+
+        transition: background-color global.$animation-fast global.$easing;
+    }
+
+    &__icon {
+        color: color.$neutral-1;
+
+        transition: color global.$animation-fast global.$easing;
+    }
+}
+
+.category-picker__button_active {
+    background-color: color.$accent-opacity;
+
+    .category-picker__icon {
+        color: color.$accent;
+    }
+}
