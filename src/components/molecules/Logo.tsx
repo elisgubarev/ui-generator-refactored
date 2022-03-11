@@ -18,7 +18,7 @@ const Logo: FC<Props> = (props) => {
             href={props.href}
             target={props.target}
         >
-            <div className="logo__wrapepr">
+            <div className="logo__wrapper">
                 <img className="logo__image" src={logo} alt="UI Generator logo"/>
                 <span className="logo__text">{props.children}</span>
             </div>
