@@ -3,7 +3,7 @@ import Button from '../components/molecules/Button'
 import TypePicker from "../components/molecules/TypePicker";
 import CategoryPicker from "../components/molecules/CategoryPicker";
 import ColorPicker from '../components/molecules/ColorPicker';
-import DarkPicker from '../components/molecules/DarkPicker';
+import Toggle from '../components/molecules/Toggle';
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
             </div>
             <br />
             <div className='app'>
-                <DarkPicker />
+                <Toggle />
             </div>
             <br />
 

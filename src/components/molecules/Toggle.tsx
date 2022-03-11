@@ -11,9 +11,9 @@ type ItemProps = {
     onClick: () => void;
 }
 
-const Toggle: FC<ItemProps> = (props) => {
+const ToggleButton: FC<ItemProps> = (props) => {
     return (
-        <button className={`dark-picker__toggle ${props.active === 1 ? "dark-picker__toggle_active" : ""}`} onClick={props.onClick}></button>
+        <button className={`toggle__button ${props.active === 1 ? "toggle__button_active" : ""}`} onClick={props.onClick}></button>
     );
 }
 
@@ -21,11 +21,11 @@ type Props = {
     className?: string;
 }
 
-const DarkPicker: FC<Props> = (props) => {
+const Toggle: FC<Props> = (props) => {
     const stateDark = useSelector((state: RootState) => state.content.dark);
     const dispatch = useDispatch();
 
-    const className = composeClassList("dark-picker", props.className);
+    const className = composeClassList("toggle", props.className);
 
     const handleClick = () => {
         stateDark === 0 ? dispatch(changeDark(1)) : dispatch(changeDark(0));
@@ -33,12 +33,12 @@ const DarkPicker: FC<Props> = (props) => {
 
     return (
         <div className={className}>
-            <div className="dark-picker__wrapper">
-                <span className="dark-picker__label">Dark background</span>
-                <Toggle active={stateDark} onClick={handleClick} />
+            <div className="toggle__wrapper">
+                <span className="toggle__label">Dark background</span>
+                <ToggleButton active={stateDark} onClick={handleClick} />
             </div>
         </div>
     );
 }
 
-export default DarkPicker;
+export default Toggle;

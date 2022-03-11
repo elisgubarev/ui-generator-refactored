@@ -2,14 +2,15 @@
 @use "../atoms/text_styles.scss" as text;
 @use "../atoms/global.scss";
 
-.dark-picker {
+.toggle {
+    width: 200px; //for dev purposes, remove later
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    &__toggle {
+    &__button {
         width: 34px;
         padding: 3px;
         border-radius: 999px;
@@ -32,7 +33,7 @@
     }
 }
 
-.dark-picker__toggle_active {
+.toggle__button_active {
     background-color: color.$accent;
 
     &:after {
