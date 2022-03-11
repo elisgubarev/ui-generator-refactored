@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { RootState } from '../../app/store';
 import { useDispatch, useSelector } from 'react-redux';
-import { changeDark } from '../../app/contentSlice';
+import { changeDark, changeMockup } from '../../app/contentSlice';
 
 
 import { composeClassList } from "../../functions/composeClassList";
@@ -19,23 +19,41 @@ const ToggleButton: FC<ItemProps> = (props) => {
 
 type Props = {
     className?: string;
+    label?: string;
+    changedValue: "dark" | "mockup";
 }
 
 const Toggle: FC<Props> = (props) => {
+    const { changedValue, label } = props;
     const stateDark = useSelector((state: RootState) => state.content.dark);
+    const stateMockup = useSelector((state: RootState) => state.content.mockup);
     const dispatch = useDispatch();
 
     const className = composeClassList("toggle", props.className);
 
     const handleClick = () => {
-        stateDark === 0 ? dispatch(changeDark(1)) : dispatch(changeDark(0));
+        if (changedValue === "dark") {
+            stateDark === 0 ? dispatch(changeDark(1)) : dispatch(changeDark(0));
+        }
+        if (changedValue === "mockup") {
+            stateMockup === 0 ? dispatch(changeMockup(1)) : dispatch(changeMockup(0));
+        }
+    }
+
+    const activeState = () => {
+        if (changedValue === "dark") return stateDark;
+        if (changedValue === "mockup") return stateMockup;
+        return stateDark;
     }
 
     return (
         <div className={className}>
             <div className="toggle__wrapper">
-                <span className="toggle__label">Dark background</span>
-                <ToggleButton active={stateDark} onClick={handleClick} />
+                <span className="toggle__label">{label}</span>
+                <ToggleButton
+                    active={activeState()}
+                    onClick={handleClick}
+                />
             </div>
         </div>
     );

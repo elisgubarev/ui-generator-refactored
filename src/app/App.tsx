@@ -34,7 +34,13 @@ function App() {
             </div>
             <br />
             <div className='app'>
-                <Toggle />
+                <Toggle label="Dark background" changedValue='dark' />
+
+            </div>
+            <br />
+            <div className='app'>
+
+                <Toggle label="Mockup" changedValue='mockup' />
             </div>
             <br />
 
