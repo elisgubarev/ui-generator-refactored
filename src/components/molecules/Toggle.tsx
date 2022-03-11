@@ -19,12 +19,11 @@ const ToggleButton: FC<ItemProps> = (props) => {
 
 type Props = {
     className?: string;
-    label?: string;
     changedValue: "dark" | "mockup";
 }
 
 const Toggle: FC<Props> = (props) => {
-    const { changedValue, label } = props;
+    const { changedValue} = props;
     const stateDark = useSelector((state: RootState) => state.content.dark);
     const stateMockup = useSelector((state: RootState) => state.content.mockup);
     const dispatch = useDispatch();
@@ -48,7 +47,7 @@ const Toggle: FC<Props> = (props) => {
     return (
         <div className={className}>
             <div className="toggle__wrapper">
-                <span className="toggle__label">{label}</span>
+                <span className="toggle__label">{props.children}</span>
                 <ToggleButton
                     active={activeState()}
                     onClick={handleClick}

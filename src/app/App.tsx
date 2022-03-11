@@ -33,18 +33,18 @@ function App() {
             </div>
             <br />
             <div className='app'>
-                <Toggle label="Dark background" changedValue='dark' />
+                <Toggle changedValue='dark'>Dark background</Toggle>
 
             </div>
             <br />
             <div className='app'>
 
-                <Toggle label="Mockup" changedValue='mockup' />
+                <Toggle changedValue='mockup'>Mockup</Toggle>
             </div>
             <br />
             <div className='app'>
 
-                <Logo />
+                <Logo href="https://unicornplatform.com">Unicorn Platform</Logo>
             </div>
             <br />
 
