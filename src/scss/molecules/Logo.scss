@@ -1,0 +1,24 @@
+@use "../atoms/colors.scss" as color;
+@use "../atoms/text_styles.scss" as text;
+@use "../atoms/global.scss";
+
+.logo {
+    &__wrapper {
+        @include global.inlineFlexCenter;
+    }
+
+    &__image {
+        margin-right: 14px;
+    }
+
+    &__text {
+        @include text.logo;
+        color: color.$neutral-1;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    transition: opacity global.$animation-duration global.$easing;
+}
