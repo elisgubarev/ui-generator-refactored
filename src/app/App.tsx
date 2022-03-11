@@ -4,6 +4,7 @@ import TypePicker from "../components/molecules/TypePicker";
 import CategoryPicker from "../components/molecules/CategoryPicker";
 import ColorPicker from '../components/molecules/ColorPicker';
 import Toggle from '../components/molecules/Toggle';
+import Logo from '../components/molecules/Logo';
 
 
 function App() {
@@ -39,6 +40,11 @@ function App() {
             <div className='app'>
 
                 <Toggle label="Mockup" changedValue='mockup' />
+            </div>
+            <br />
+            <div className='app'>
+
+                <Logo />
             </div>
             <br />
 
