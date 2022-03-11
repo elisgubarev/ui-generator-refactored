@@ -1,0 +1,41 @@
+@use "../atoms/colors.scss" as color;
+@use "../atoms/text_styles.scss" as text;
+@use "../atoms/global.scss";
+
+.dark-picker {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__toggle {
+        width: 34px;
+        padding: 3px;
+        border-radius: 999px;
+        cursor: pointer;
+        user-select: none;
+        background-color: color.$neutral-3;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: color.$white;
+
+            transition: transform global.$animation-fast global.$easing;
+        }
+
+        transition: background-color global.$animation-fast global.$easing;
+    }
+}
+
+.dark-picker__toggle_active {
+    background-color: color.$accent;
+
+    &:after {
+        transform: translateX(100%);
+    }
+}

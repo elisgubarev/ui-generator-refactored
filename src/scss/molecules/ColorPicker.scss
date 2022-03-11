@@ -21,7 +21,7 @@
         cursor: pointer;
         user-select: none;
 
-        transition: transform global.$animation-fast global.$easing;
+        transition: transform global.$animation-fast global.$easing, background-color global.$animation-fast global.$easing;
     }
 
     &__icon {
