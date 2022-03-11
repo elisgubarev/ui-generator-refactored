@@ -12,13 +12,11 @@ function App() {
             <div className={"app"}>
                 <Button
                     buttonType='download'
-                    className='class-test'
                 >
                     Download .png
                 </Button>
                 <Button
                     buttonType='link'
-                    className='class-test'
                 >
                     Try it for free
                 </Button>

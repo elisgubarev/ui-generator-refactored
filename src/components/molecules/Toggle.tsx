@@ -42,8 +42,7 @@ const Toggle: FC<Props> = (props) => {
 
     const activeState = () => {
         if (changedValue === "dark") return stateDark;
-        if (changedValue === "mockup") return stateMockup;
-        return stateDark;
+        return stateMockup;
     }
 
     return (
