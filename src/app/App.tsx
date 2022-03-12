@@ -7,38 +7,12 @@ import Toggle from '../components/molecules/Toggle';
 import Logo from '../components/molecules/Logo';
 import Section from '../components/molecules/Section';
 import Share from '../components/molecules/Share';
+import Sidebar from '../components/organisms/Sidebar';
 
 
 function App() {
     return (
-        <div className="dev-sidebar">
-            <Section>
-                <Logo href="/" tagline>UI Generator</Logo>
-            </Section>
-
-            <Section label="UI Type">
-                <TypePicker />
-            </Section>
-
-            <Section label="Category">
-                <CategoryPicker />
-            </Section>
-
-            <Section label="Color">
-                <ColorPicker />
-            </Section>
-
-            <Section label="Appearance">
-                <Toggle changedValue='dark'>Dark background</Toggle>
-                <Toggle changedValue='mockup'>Mockup</Toggle>
-            </Section>
-
-            <Section label="Share with friends">
-                <Share/>
-            </Section>
-
-
-        </div>
+        <Sidebar />
     );
 }
 

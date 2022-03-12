@@ -1,0 +1,19 @@
+.sidebar {
+    border: 1px solid #d9d9d9;
+    max-width: 300px;
+
+    &__wrapper {
+        padding: 28px 24px;
+    }
+
+    &__row {
+        margin-bottom: 64px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &_logo {
+            margin-bottom: 42px;
+        }
+    }
+}

@@ -23,7 +23,8 @@
     }
 
     &__tagline {
-        @include text.small;
+        @include text.secondary;
+        color: color.$neutral-2;
         margin-top: 12px;
     }
 }

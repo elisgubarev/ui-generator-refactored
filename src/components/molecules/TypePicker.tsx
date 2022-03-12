@@ -46,13 +46,13 @@ const TypePicker: FC<Props> = (props) => {
                     selected={stateType}
                     onClick={() => handleClick(0)}
                 >
-                    Mobile
+                    Desktop
                 </SwitcherButton>
                 <SwitcherButton id={1}
                     selected={stateType}
                     onClick={() => handleClick(1)}
                 >
-                    Desktop
+                    Mobile
                 </SwitcherButton>
             </div>
         </div>
