@@ -3,7 +3,7 @@
 @use "../atoms/global.scss";
 
 .toggle {
-    width: 200px; //for dev purposes, remove later
+    width: 100%;
     &__wrapper {
         display: flex;
         align-items: center;

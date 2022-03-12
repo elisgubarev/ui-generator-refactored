@@ -1,8 +1,9 @@
-@use '../atoms/colors' as color;
-@use '../atoms/text_styles' as text;
-@use '../atoms/global';
+@use "../atoms/colors" as color;
+@use "../atoms/text_styles" as text;
+@use "../atoms/global";
 
 .type-picker {
+  width: 100%;
 
   &__wrapper {
     @include global.flexCenter;

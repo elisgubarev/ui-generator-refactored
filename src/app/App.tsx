@@ -5,49 +5,31 @@ import CategoryPicker from "../components/molecules/CategoryPicker";
 import ColorPicker from '../components/molecules/ColorPicker';
 import Toggle from '../components/molecules/Toggle';
 import Logo from '../components/molecules/Logo';
+import Section from '../components/molecules/Section';
 
 
 function App() {
     return (
-        <>
-            <div className={"app"}>
-                <Button
-                    buttonType='download'
-                >
-                    Download .png
-                </Button>
-                <Button
-                    buttonType='link'
-                >
-                    Try it for free
-                </Button>
+        <div className="dev-sidebar">
+            <Section label="UI Type">
                 <TypePicker />
-            </div>
-            <br />
-            <div className={"app"}>
+            </Section>
+
+            <Section label="Category">
                 <CategoryPicker />
-            </div>
-            <br />
-            <div className='app'>
+            </Section>
+
+            <Section label="Color">
                 <ColorPicker />
-            </div>
-            <br />
-            <div className='app'>
+            </Section>
+
+            <Section label="Appearance">
                 <Toggle changedValue='dark'>Dark background</Toggle>
-
-            </div>
-            <br />
-            <div className='app'>
-
                 <Toggle changedValue='mockup'>Mockup</Toggle>
-            </div>
-            <br />
-            <div className='app'>
-                <Logo href="https://unicornplatform.com" tagline>UI Generator</Logo>
-            </div>
-            <br />
+            </Section>
 
-        </>
+
+        </div>
     );
 }
 
