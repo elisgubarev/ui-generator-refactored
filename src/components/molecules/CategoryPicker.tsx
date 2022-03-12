@@ -66,17 +66,20 @@ const CategoryPicker: FC<Props> = (props) => {
         dispatch(changeCategory(buttonId));
     }
 
+    const renderItems = () => {
+        const itemsArray = [];
+        for (let itemId = 0; itemId < 8; itemId++) {
+            itemsArray.push(
+                <CategoryItem id={itemId} key={itemId} selected={stateCategory} type={stateType} onClick={() => handleClick(itemId)} />
+            );
+        }
+        return itemsArray;
+    }
+
     return (
         <div className={className}>
             <div className="category-picker__wrapper">
-                <CategoryItem id={0} selected={stateCategory} type={stateType} onClick={() => handleClick(0)} />
-                <CategoryItem id={1} selected={stateCategory} type={stateType} onClick={() => handleClick(1)} />
-                <CategoryItem id={2} selected={stateCategory} type={stateType} onClick={() => handleClick(2)} />
-                <CategoryItem id={3} selected={stateCategory} type={stateType} onClick={() => handleClick(3)} />
-                <CategoryItem id={4} selected={stateCategory} type={stateType} onClick={() => handleClick(4)} />
-                <CategoryItem id={5} selected={stateCategory} type={stateType} onClick={() => handleClick(5)} />
-                <CategoryItem id={6} selected={stateCategory} type={stateType} onClick={() => handleClick(6)} />
-                <CategoryItem id={7} selected={stateCategory} type={stateType} onClick={() => handleClick(7)} />
+                {renderItems()}
             </div>
         </div>
     );
