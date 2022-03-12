@@ -8,6 +8,7 @@
 @use "headings/H3.scss";
 @use "molecules/Section.scss";
 @use "molecules/Share.scss";
+@use "molecules/Result.scss";
 @use "organisms/Sidebar.scss";
 
 body {
@@ -16,13 +17,15 @@ body {
   line-height: 0;
 }
 
-button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	outline: inherit;
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
 }
 
 a {
@@ -30,14 +33,7 @@ a {
 }
 
 //for testing
-.dev-sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 48px;
-  row-gap: 32px;
-  max-width: 300px;
-  border: 1px solid #d9d9d9;
-  padding: 64px 0
+.dev-main {
+  margin-left: 364px;
+  padding-top: 64px;
 }

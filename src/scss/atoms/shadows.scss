@@ -9,3 +9,9 @@
 @mixin color-inner {
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
+
+@mixin result-image {
+  box-shadow: 0px 0px 2.2138051986694336px 0px #252c6104, 0px 0px 5.32008171081543px 0px #252c6105,
+    0px 0px 10.017241477966309px 0px #252c6106, 0px 0px 17.869047164916992px 0px #252c6108,
+    0px 0px 33.422088623046875px 0px #252c6109, 0px 0px 80px 0px #252c610d;
+}

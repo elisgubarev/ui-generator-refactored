@@ -23,7 +23,7 @@ type Props = {
 }
 
 const Toggle: FC<Props> = (props) => {
-    const { changedValue} = props;
+    const { changedValue } = props;
     const stateDark = useSelector((state: RootState) => state.content.dark);
     const stateMockup = useSelector((state: RootState) => state.content.mockup);
     const dispatch = useDispatch();

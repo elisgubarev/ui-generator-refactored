@@ -1,19 +1,19 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-export interface AppState {
+export interface ContentState {
     type: number,
     category: number,
-    color: number,
     dark: number,
-    mockup: number
+    mockup: number,
+    color: number,
 }
 
-const initialState: AppState = {
+const initialState: ContentState = {
     type: 0,
     category: 0,
-    color: 0,
     dark: 0,
-    mockup: 0
+    mockup: 0,
+    color: 0,
 }
 
 export const contentSlice = createSlice({
@@ -26,18 +26,18 @@ export const contentSlice = createSlice({
         changeCategory: (state, action: PayloadAction<number>) => {
             state.category = action.payload;
         },
-        changeColor: (state, action: PayloadAction<number>) => {
-            state.color = action.payload;
-        },
         changeDark: (state, action: PayloadAction<number>) => {
             state.dark = action.payload;
         },
         changeMockup: (state, action: PayloadAction<number>) => {
             state.mockup = action.payload;
         },
+        changeColor: (state, action: PayloadAction<number>) => {
+            state.color = action.payload;
+        },
     },
 })
 
-export const {changeType, changeCategory, changeColor, changeDark, changeMockup} = contentSlice.actions;
+export const { changeType, changeCategory, changeDark, changeMockup, changeColor } = contentSlice.actions;
 
 export default contentSlice.reducer;
