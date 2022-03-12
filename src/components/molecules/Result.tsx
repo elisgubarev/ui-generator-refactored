@@ -10,7 +10,6 @@ type Props = {
 
 const Result: FC<Props> = (props) => {
     const state: any = useSelector((state: RootState) => state.content);
-    const imageLoading = useSelector((state: RootState) => state.appState.imageLoading);
     const dispatch = useDispatch();
     const className = composeClassList('result', props.className);
 
