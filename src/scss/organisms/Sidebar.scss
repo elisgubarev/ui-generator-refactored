@@ -1,6 +1,14 @@
+@use "../atoms/colors" as color;
+@use "../atoms/text_styles" as text;
+@use "../atoms/global";
+
 .sidebar {
-    border: 1px solid #d9d9d9;
     max-width: 300px;
+    border-right: 1px solid color.$neutral-4;
+    background-color: color.$white;
+    position: fixed;
+    overflow: auto;
+    height: 100%;
 
     &__wrapper {
         padding: 28px 24px;
