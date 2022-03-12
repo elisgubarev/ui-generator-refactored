@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2d6fe734.css",
+    "main.js": "/static/js/main.20d66611.js",
+    "static/media/material-icons-two-tone.woff": "/static/media/material-icons-two-tone.169d9845612b754f6086.woff",
+    "static/media/material-icons-two-tone.woff2": "/static/media/material-icons-two-tone.20196d7544af60588088.woff2",
+    "static/media/material-icons-round.woff": "/static/media/material-icons-round.da8b129efeb630b26ed6.woff",
+    "static/media/material-icons-outlined.woff": "/static/media/material-icons-outlined.87cab673c66feef0fff5.woff",
+    "static/media/material-icons-round.woff2": "/static/media/material-icons-round.d2bed20c07ba3474734b.woff2",
+    "static/media/material-icons.woff": "/static/media/material-icons.bd61fe012dd9177e7cc9.woff",
+    "static/media/material-icons-sharp.woff": "/static/media/material-icons-sharp.1ce995aceb7a022c2148.woff",
+    "static/media/material-icons-outlined.woff2": "/static/media/material-icons-outlined.5520f2737f1bb3d8a011.woff2",
+    "static/media/material-icons-sharp.woff2": "/static/media/material-icons-sharp.74f9d37f0ed879edf5af.woff2",
+    "static/media/material-icons.woff2": "/static/media/material-icons.a3e4b8576868d394c1da.woff2",
+    "static/media/logo.svg": "/static/media/logo.ee339ca3591e79431051c4b80d39d8fb.svg",
+    "static/media/twitter.svg": "/static/media/twitter.2255b06f128343aa90147484238ee475.svg",
+    "index.html": "/index.html",
+    "static/media/facebook.svg": "/static/media/facebook.4df9493e3bc4d0078d2d69fa18f6360e.svg",
+    "main.2d6fe734.css.map": "/static/css/main.2d6fe734.css.map",
+    "main.20d66611.js.map": "/static/js/main.20d66611.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d6fe734.css",
+    "static/js/main.20d66611.js"
+  ]
+}
