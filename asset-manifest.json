@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/UI-Generator-refactoring/static/css/main.d4803ba6.css",
-    "main.js": "/UI-Generator-refactoring/static/js/main.b0f43855.js",
+    "main.css": "/UI-Generator-refactoring/static/css/main.3d4e6273.css",
+    "main.js": "/UI-Generator-refactoring/static/js/main.8f8958c7.js",
     "static/media/material-icons-two-tone.woff": "/UI-Generator-refactoring/static/media/material-icons-two-tone.169d9845612b754f6086.woff",
     "static/media/material-icons-two-tone.woff2": "/UI-Generator-refactoring/static/media/material-icons-two-tone.20196d7544af60588088.woff2",
     "static/media/material-icons-round.woff": "/UI-Generator-refactoring/static/media/material-icons-round.da8b129efeb630b26ed6.woff",
@@ -16,11 +16,11 @@
     "static/media/twitter.svg": "/UI-Generator-refactoring/static/media/twitter.2255b06f128343aa90147484238ee475.svg",
     "index.html": "/UI-Generator-refactoring/index.html",
     "static/media/facebook.svg": "/UI-Generator-refactoring/static/media/facebook.4df9493e3bc4d0078d2d69fa18f6360e.svg",
-    "main.d4803ba6.css.map": "/UI-Generator-refactoring/static/css/main.d4803ba6.css.map",
-    "main.b0f43855.js.map": "/UI-Generator-refactoring/static/js/main.b0f43855.js.map"
+    "main.3d4e6273.css.map": "/UI-Generator-refactoring/static/css/main.3d4e6273.css.map",
+    "main.8f8958c7.js.map": "/UI-Generator-refactoring/static/js/main.8f8958c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4803ba6.css",
-    "static/js/main.b0f43855.js"
+    "static/css/main.3d4e6273.css",
+    "static/js/main.8f8958c7.js"
   ]
 }
