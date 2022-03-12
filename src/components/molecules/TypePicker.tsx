@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { RootState } from '../../app/store'
 import { useSelector, useDispatch } from "react-redux";
 import { changeType } from '../../app/contentSlice';
+import { changeImageLoading } from '../../app/appStateSlice';
 import { composeClassList } from "../../functions/composeClassList";
 import { isSelected } from "../../functions/isSelected";
 
@@ -37,6 +38,7 @@ const TypePicker: FC<Props> = (props) => {
 
     const handleClick = (buttonId: number) => {
         dispatch(changeType(buttonId));
+        dispatch(changeImageLoading(true));
     }
 
     return (

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeColor } from "../../app/contentSlice";
 import { composeClassList } from "../../functions/composeClassList";
 import { isSelected } from "../../functions/isSelected";
+import { changeImageLoading } from '../../app/appStateSlice';
 
 import 'material-icons/iconfont/material-icons.css';
 const iconStyleClass = "material-icons-round";
@@ -61,6 +62,7 @@ const ColorPicker: FC<Props> = (props) => {
 
     const handleClick = (itemId: number) => {
         dispatch(changeColor(itemId));
+        dispatch(changeImageLoading(true));
     }
 
     const renderItems = () => {

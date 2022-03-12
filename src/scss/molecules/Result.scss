@@ -2,8 +2,10 @@
 
 .result {
     &__image {
-        @include shadow.result-image;
         max-height: 524px;
         user-select: none;
+        &.result__image_shadow {
+            @include shadow.result-image;
+        }
     }
 }

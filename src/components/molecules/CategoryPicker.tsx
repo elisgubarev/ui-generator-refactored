@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { changeCategory } from '../../app/contentSlice'
 import { composeClassList } from '../../functions/composeClassList';
 import { isSelected } from '../../functions/isSelected';
+import { changeImageLoading } from '../../app/appStateSlice';
 
 import 'material-icons/iconfont/material-icons.css';
 const iconStyleClass = "material-icons-round";
@@ -64,6 +65,7 @@ const CategoryPicker: FC<Props> = (props) => {
 
     const handleClick = (buttonId: number) => {
         dispatch(changeCategory(buttonId));
+        dispatch(changeImageLoading(true));
     }
 
     const renderItems = () => {
