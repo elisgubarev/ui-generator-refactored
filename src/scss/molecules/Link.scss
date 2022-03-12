@@ -1,0 +1,11 @@
+@use "../atoms/colors" as color;
+@use "../atoms/global";
+
+.link {
+    color: color.$accent;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}

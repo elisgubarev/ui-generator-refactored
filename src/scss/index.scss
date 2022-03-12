@@ -4,10 +4,12 @@
 @use "molecules/ColorPicker.scss";
 @use "molecules/Toggle.scss";
 @use "molecules/Logo.scss";
+@use "molecules/Link.scss";
 
 body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
+  line-height: 0;
 }
 
 //for testing

@@ -5,6 +5,12 @@
 .logo {
     &__wrapper {
         @include global.inlineFlexCenter;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        transition: opacity global.$animation-duration global.$easing;
     }
 
     &__image {
@@ -16,9 +22,8 @@
         color: color.$neutral-1;
     }
 
-    &:hover {
-        opacity: 0.7;
+    &__tagline {
+        @include text.small;
+        margin-top: 12px;
     }
-
-    transition: opacity global.$animation-duration global.$easing;
 }

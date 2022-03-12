@@ -43,8 +43,7 @@ function App() {
             </div>
             <br />
             <div className='app'>
-
-                <Logo href="https://unicornplatform.com">UI Generator</Logo>
+                <Logo href="https://unicornplatform.com" tagline>UI Generator</Logo>
             </div>
             <br />
 
