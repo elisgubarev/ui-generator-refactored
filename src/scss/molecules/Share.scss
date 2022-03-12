@@ -4,6 +4,7 @@
     &__item {
         display: inline-block;
         margin-right: 24px;
+        user-select: none;
 
         &:last-child {
             margin-right: 0;

@@ -63,17 +63,20 @@ const ColorPicker: FC<Props> = (props) => {
         dispatch(changeColor(itemId));
     }
 
+    const renderItems = () => {
+        const itemsArray = [];
+        for (let itemId = 0; itemId < 8; itemId++) {
+            itemsArray.push(
+                <PickerItem id={itemId} key={itemId} selected={stateColor} onClick={() => handleClick(itemId)} dark={stateDark} />
+            );
+        }
+        return itemsArray;
+    }
+
     return (
         <div className={className}>
             <div className="color-picker__wrapper">
-                <PickerItem id={0} selected={stateColor} onClick={() => handleClick(0)} dark={stateDark} />
-                <PickerItem id={1} selected={stateColor} onClick={() => handleClick(1)} dark={stateDark} />
-                <PickerItem id={2} selected={stateColor} onClick={() => handleClick(2)} dark={stateDark} />
-                <PickerItem id={3} selected={stateColor} onClick={() => handleClick(3)} dark={stateDark} />
-                <PickerItem id={4} selected={stateColor} onClick={() => handleClick(4)} dark={stateDark} />
-                <PickerItem id={5} selected={stateColor} onClick={() => handleClick(5)} dark={stateDark} />
-                <PickerItem id={6} selected={stateColor} onClick={() => handleClick(6)} dark={stateDark} />
-                <PickerItem id={7} selected={stateColor} onClick={() => handleClick(7)} dark={stateDark} />
+                {renderItems()}
             </div>
         </div>
     );

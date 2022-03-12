@@ -25,6 +25,10 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 //for testing
 .dev-sidebar {
   display: flex;
