@@ -17,7 +17,7 @@ const Result: FC<Props> = (props) => {
         Object.keys(state).forEach((key) => {
             src += state[key];
         })
-        return `./ui/${src}.png`;
+        return `${process.env.PUBLIC_URL}/ui/${src}.png`;
     }
 
     const hasShadow = () => {
