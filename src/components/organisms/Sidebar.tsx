@@ -5,7 +5,7 @@ import CategoryPicker from "../../components/molecules/CategoryPicker";
 import ColorPicker from '../../components/molecules/ColorPicker';
 import Toggle from '../../components/molecules/Toggle';
 import Logo from '../../components/molecules/Logo';
-import Section from '../../components/molecules/Section';
+import SidebarSection from '../../components/organisms/SidebarSection';
 import Share from '../../components/molecules/Share';
 
 type RowProps = {
@@ -31,35 +31,35 @@ const Sidebar: FC<Props> = (props) => {
         <div className={className}>
             <div className="sidebar__wrapper">
                 <Row className="sidebar__row_logo">
-                    <Section>
+                    <SidebarSection>
                         <Logo href="/" tagline>UI Generator</Logo>
-                    </Section>
+                    </SidebarSection>
                 </Row>
                 <Row>
-                    <Section label="UI Type">
+                    <SidebarSection label="UI Type">
                         <TypePicker />
-                    </Section>
+                    </SidebarSection>
                 </Row>
                 <Row>
-                    <Section label="Category">
+                    <SidebarSection label="Category">
                         <CategoryPicker />
-                    </Section>
+                    </SidebarSection>
                 </Row>
                 <Row>
-                    <Section label="Color">
+                    <SidebarSection label="Color">
                         <ColorPicker />
-                    </Section>
+                    </SidebarSection>
                 </Row>
                 <Row>
-                    <Section label="Appearance">
+                    <SidebarSection label="Appearance">
                         <Toggle changedValue='dark'>Dark background</Toggle>
                         <Toggle changedValue='mockup'>Mockup</Toggle>
-                    </Section>
+                    </SidebarSection>
                 </Row>
                 <Row>
-                    <Section label="Share with friends">
+                    <SidebarSection label="Share with friends">
                         <Share />
-                    </Section>
+                    </SidebarSection>
                 </Row>
             </div>
         </div>

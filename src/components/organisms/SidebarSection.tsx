@@ -7,7 +7,7 @@ type Props = {
     label?: string;
 }
 
-const Section: FC<Props> = (props) => {
+const SidebarSection: FC<Props> = (props) => {
     const className = composeClassList('section', props.className);
     return (
         <div className={className}>
@@ -19,4 +19,4 @@ const Section: FC<Props> = (props) => {
     );
 }
 
-export default Section;
+export default SidebarSection;

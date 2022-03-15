@@ -1,0 +1,9 @@
+import { FC } from 'react';
+
+type Props = {}
+
+const ResultSection: FC<Props> = (props) => {
+    return <div></div>
+}
+
+export default ResultSection;
