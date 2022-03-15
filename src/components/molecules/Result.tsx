@@ -1,6 +1,6 @@
-import { FC, useState} from 'react';
+import { FC, useState } from 'react';
 import { RootState } from '../../app/store';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { composeClassList } from '../../functions/composeClassList';
 
 type Props = {
@@ -9,7 +9,6 @@ type Props = {
 
 const Result: FC<Props> = (props) => {
     const state: any = useSelector((state: RootState) => state.content);
-    const dispatch = useDispatch();
     const className = composeClassList('result', props.className);
 
     const generateSrc = () => {
