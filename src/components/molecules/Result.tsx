@@ -2,7 +2,6 @@ import { FC, useState} from 'react';
 import { RootState } from '../../app/store';
 import { useSelector, useDispatch } from 'react-redux';
 import { composeClassList } from '../../functions/composeClassList';
-import { changeImageLoading } from '../../app/appStateSlice';
 
 type Props = {
     className?: string;
@@ -27,7 +26,6 @@ const Result: FC<Props> = (props) => {
     const [shadow, setShadow] = useState(hasShadow());
 
     const handleOnLoad = () => {
-        dispatch(changeImageLoading(false));
         setShadow(hasShadow());
     }
 

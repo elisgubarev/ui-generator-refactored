@@ -2,7 +2,6 @@ import { FC } from 'react'
 import { RootState } from '../../app/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeDark, changeMockup } from '../../app/contentSlice';
-import { changeImageLoading } from '../../app/appStateSlice';
 
 
 import { composeClassList } from "../../functions/composeClassList";
@@ -38,7 +37,6 @@ const Toggle: FC<Props> = (props) => {
         if (changedValue === "mockup") {
             stateMockup === 0 ? dispatch(changeMockup(1)) : dispatch(changeMockup(0));
         }
-        dispatch(changeImageLoading(true));
     }
 
     const activeState = () => {
