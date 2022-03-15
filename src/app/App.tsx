@@ -2,6 +2,7 @@ import Sidebar from '../components/organisms/Sidebar';
 import Result from '../components/molecules/Result';
 import ResultSection from '../components/organisms/ResultSection';
 import H1 from '../components/headings/H1';
+import H1Title from '../components/organisms/H1Title';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
             <Sidebar />
             <div className="dev-main">
                 <ResultSection>
-                    <H1>Generate and Download Mockup UI</H1>
+                    <H1Title />
                     <Result />
                 </ResultSection>
             </div>
