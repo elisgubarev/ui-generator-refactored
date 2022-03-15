@@ -8,12 +8,12 @@ type Props = {
 }
 
 const SidebarSection: FC<Props> = (props) => {
-    const className = composeClassList('section', props.className);
+    const className = composeClassList('sidebar-section', props.className);
     return (
         <div className={className}>
-            <div className='section__wrapper'>
-                {props.label && <H3 className="section__label">{props.label}</H3>}
-                <div className="section__content">{props.children}</div>
+            <div className='sidebar-section__wrapper'>
+                {props.label && <H3 className="sidebar-section__label">{props.label}</H3>}
+                <div className="sidebar-section__content">{props.children}</div>
             </div>
         </div>
     );

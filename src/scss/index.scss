@@ -6,15 +6,17 @@
 @use "molecules/Logo.scss";
 @use "molecules/Link.scss";
 @use "headings/H3.scss";
-@use "molecules/Section.scss";
 @use "molecules/Share.scss";
 @use "molecules/Result.scss";
+@use "organisms/SidebarSection.scss";
 @use "organisms/Sidebar.scss";
+@use "organisms/ResultSection.scss";
 
 body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 0;
+  margin: 0;
 }
 
 button,
@@ -34,6 +36,6 @@ a {
 
 //for testing
 .dev-main {
-  margin-left: 364px;
-  padding-top: 64px;
+  margin-left: 300px;
+  // padding-top: 64px;
 }

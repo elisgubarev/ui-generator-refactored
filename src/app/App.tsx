@@ -1,5 +1,6 @@
 import Sidebar from '../components/organisms/Sidebar';
 import Result from '../components/molecules/Result';
+import ResultSection from '../components/organisms/ResultSection';
 
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
         <div className="dev-app">
             <Sidebar />
             <div className="dev-main">
-                <Result />
+                <ResultSection>
+                    <Result />
+                </ResultSection>
             </div>
         </div>
     );

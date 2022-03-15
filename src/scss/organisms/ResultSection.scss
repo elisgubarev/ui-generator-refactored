@@ -1,0 +1,14 @@
+@use "../atoms/colors.scss" as color;
+
+.result-section {
+    background-color: color.$accent-background;
+    border-bottom: 1px solid color.$neutral-4;
+    border-top: 1px solid color.$neutral-4;
+
+    &__wrapper {
+        padding: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
