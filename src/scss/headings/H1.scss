@@ -1,0 +1,7 @@
+@use "../atoms/text_styles.scss" as text;
+@use "../atoms/colors.scss" as color;
+
+.h1 {
+    @include text.h1;
+    color: color.$neutral-1;
+}
