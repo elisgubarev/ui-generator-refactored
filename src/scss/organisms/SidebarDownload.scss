@@ -1,0 +1,23 @@
+@use "../atoms/colors.scss" as color;
+@use "../atoms/global.scss";
+@use "../atoms/shadows.scss" as shadow;
+
+.sidebar-download {
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: global.$sidebar-width - 1;
+    border-top: 1px solid color.$neutral-4;
+    background-color: color.$white;
+    @include shadow.fade-out;
+
+    &__wrapper {
+        padding: 16px 24px;
+        @include global.flexCenter;
+    }
+
+    &__button {
+        width: 100%;
+    }
+}

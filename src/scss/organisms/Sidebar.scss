@@ -3,7 +3,7 @@
 @use "../atoms/global";
 
 .sidebar {
-    max-width: 300px;
+    max-width: global.$sidebar-width;
     border-right: 1px solid color.$neutral-4;
     background-color: color.$white;
     position: fixed;
@@ -11,13 +11,13 @@
     height: 100%;
 
     &__wrapper {
-        padding: 28px 24px;
+        padding: 28px 24px 136px;
     }
 
     &__row {
         margin-bottom: 64px;
         &:last-child {
-            margin-bottom: 80px;
+            margin-bottom: 0;
         }
 
         &_logo {

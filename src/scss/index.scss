@@ -13,6 +13,9 @@
 @use "organisms/Sidebar.scss";
 @use "organisms/ResultSection.scss";
 @use "organisms/H1Title.scss";
+@use "organisms/SidebarDownload.scss";
+
+@use './atoms/global.scss';
 
 body {
   font-family: "Lato", sans-serif;
@@ -38,6 +41,6 @@ a {
 
 //for testing
 .dev-main {
-  margin-left: 300px;
+  margin-left: global.$sidebar-width;
   // padding-top: 64px;
 }

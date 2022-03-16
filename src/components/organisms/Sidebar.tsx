@@ -7,6 +7,7 @@ import Toggle from '../../components/molecules/Toggle';
 import Logo from '../../components/molecules/Logo';
 import SidebarSection from '../../components/organisms/SidebarSection';
 import Share from '../../components/molecules/Share';
+import SidebarDownload from './SidebarDownload';
 
 type RowProps = {
     className?: string;
@@ -30,6 +31,7 @@ const Sidebar: FC<Props> = (props) => {
     return (
         <div className={className}>
             <div className="sidebar__wrapper">
+                <SidebarDownload />
                 <Row className="sidebar__row_logo">
                     <SidebarSection>
                         <Logo href="/" tagline>UI Generator</Logo>
@@ -61,6 +63,7 @@ const Sidebar: FC<Props> = (props) => {
                         <Share />
                     </SidebarSection>
                 </Row>
+
             </div>
         </div>
     );

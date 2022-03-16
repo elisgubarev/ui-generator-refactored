@@ -2,6 +2,8 @@ $animation-duration: 0.2s;
 $animation-fast: 0.09s;
 $easing: ease;
 
+$sidebar-width: 300px;
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
