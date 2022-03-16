@@ -8,7 +8,7 @@
 @mixin primary {
   font-size: toRem(16);
   font-weight: 400;
-  line-height: toRem(19);
+  line-height: toRem(24);
 }
 
 @mixin secondary {
@@ -48,7 +48,7 @@
 @mixin h1 {
   font-size: toRem(32);
   font-weight: 700;
-  line-height: toRem(39);
+  line-height: toRem(42);
   font-family: "Montserrat", sans-serif;
   @media (max-width: break.$mobile) {
     font-size: toRem(24);
