@@ -9,7 +9,7 @@ type Props = {
 }
 
 const Result: FC<Props> = (props) => {
-    const state: any = useSelector((state: RootState) => state.content);
+    const state = useSelector((state: RootState) => state.content);
     const className = composeClassList('result', props.className);
 
     const hasShadow = () => {
