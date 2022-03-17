@@ -4,6 +4,7 @@ import H1 from '../../components/headings/H1';
 
 type Props = {
     className?: string;
+    heading?: string;
 }
 
 const H1Title: FC<Props> = (props) => {
@@ -11,7 +12,7 @@ const H1Title: FC<Props> = (props) => {
     return (
         <div className={className}>
             <div className="h1-title__wrapper">
-                <H1 className="h1-title__h1">Generate and Download Mockup UI</H1>
+                <H1 className="h1-title__h1">{props.heading}</H1>
                 <div className="h1-title__subtitle">
                     Create mockup (fake) UI for your landing page, prototype, presentation, or blog post. Download free PNG files.
                 </div>
