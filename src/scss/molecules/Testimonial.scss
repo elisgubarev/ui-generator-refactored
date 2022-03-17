@@ -1,0 +1,46 @@
+@use "../atoms/colors.scss" as color;
+@use "../atoms/text_styles.scss" as text;
+
+.testimonial {
+    max-width: 300px;
+    position: relative;
+
+    &__author-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        @include text.primary;
+        color: color.$neutral-1;
+        margin-bottom: 16px;
+
+        b,
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    &__name {
+        @include text.h3;
+        color: color.$neutral-1;
+    }
+
+    &__info {
+        @include text.secondary;
+        color: color.$neutral-2;
+    }
+
+    &__icon {
+        position: absolute;
+        left: -26px;
+        top: -12px;
+        z-index: -10;
+    }
+
+    &__author-photo {
+        max-width: 48px;
+        user-select: none;
+        margin-right: 20px;
+    }
+}
