@@ -11,18 +11,13 @@ export type Props = {
 }
 
 const Button: FC<Props> = (props) => {
-    const getTagByType = (): keyof JSX.IntrinsicElements => {
-        if (props.buttonType === 'link') return 'a';
-        return 'button';
-    }
     const renderIcon = () => {
         return (props.buttonType === 'download') && <img className="button__icon" src={download} alt="download icon" />
     }
-    const TagName = getTagByType();
     const className = composeClassList(`button button_${props.buttonType}`, props.className);
 
     return (
-        <TagName
+        <a
             className={className}
             href={props.href}
             target={props.target}
@@ -31,7 +26,7 @@ const Button: FC<Props> = (props) => {
             <span className="button__text">
                 {props.children}
             </span>
-        </TagName>
+        </a>
     );
 }
 
