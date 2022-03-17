@@ -4,6 +4,7 @@ import ResultSection from '../components/organisms/ResultSection';
 import H1Title from '../components/organisms/H1Title';
 import Testimonial from '../components/molecules/Testimonial';
 import photo from '../assets/images/photo.png';
+import Footer from '../components/organisms/Footer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                 >
                     Unicorn Platform is by far the <b>easiest tool</b> I've ever used to launch a landing page.
                 </Testimonial>
+                <Footer />
             </div>
         </div>
     );

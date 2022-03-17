@@ -14,11 +14,6 @@
         @include text.primary;
         color: color.$neutral-1;
         margin-bottom: 16px;
-
-        b,
-        strong {
-            font-weight: 700;
-        }
     }
 
     &__name {

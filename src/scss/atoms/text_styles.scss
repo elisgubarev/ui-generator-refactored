@@ -1,4 +1,4 @@
-@use 'breakpoints' as break;
+@use "breakpoints" as break;
 
 @function toRem($value) {
   $remValue: ($value / 16) + rem;
@@ -71,4 +71,9 @@
   font-size: toRem(16);
   font-weight: 700;
   line-height: toRem(16);
+}
+
+b,
+strong {
+  font-weight: 700;
 }
