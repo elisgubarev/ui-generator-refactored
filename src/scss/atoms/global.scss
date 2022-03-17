@@ -4,13 +4,13 @@ $easing: ease;
 
 $sidebar-width: 300px;
 
-@mixin flexCenter {
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin inlineFlexCenter {
+@mixin inline-flex-center {
   display: inline-flex;
   justify-content: center;
   align-items: center;

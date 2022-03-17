@@ -14,7 +14,7 @@
 
     &__wrapper {
         padding: 16px 24px;
-        @include global.flexCenter;
+        @include global.flex-center;
     }
 
     &__button {

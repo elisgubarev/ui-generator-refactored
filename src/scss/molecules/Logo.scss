@@ -4,7 +4,7 @@
 
 .logo {
     &__wrapper {
-        @include global.inlineFlexCenter;
+        @include global.inline-flex-center;
 
         &:hover {
             opacity: 0.7;

@@ -6,11 +6,11 @@
   width: 100%;
 
   &__wrapper {
-    @include global.flexCenter;
+    @include global.flex-center;
   }
 
   &__button {
-    @include global.flexCenter;
+    @include global.flex-center;
     padding: 6px 24px;
     min-height: 36px;
     width: 50%;

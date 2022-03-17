@@ -10,7 +10,7 @@
 }
 
 .button {
-  @include global.inlineFlexCenter;
+  @include global.inline-flex-center;
   @include shadow.button;
   padding: 12px 24px;
   border-radius: 4px;
