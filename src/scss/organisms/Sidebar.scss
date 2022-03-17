@@ -15,10 +15,7 @@
     }
 
     &__row {
-        margin-bottom: 64px;
-        &:last-child {
-            margin-bottom: 0;
-        }
+        @include global.row-gap(64px);
 
         &_logo {
             margin-bottom: 42px;

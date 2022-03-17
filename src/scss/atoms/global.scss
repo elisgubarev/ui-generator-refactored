@@ -15,3 +15,16 @@ $sidebar-width: 300px;
   justify-content: center;
   align-items: center;
 }
+
+@mixin row-gap($gap) {
+  margin-bottom: $gap;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+@mixin column-gap($gap) {
+  margin-right: $gap;
+  &:last-child {
+    margin-right: 0;
+  }
+}

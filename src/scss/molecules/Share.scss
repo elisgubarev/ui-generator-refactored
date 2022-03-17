@@ -3,12 +3,8 @@
 .share {
     &__item {
         display: inline-block;
-        margin-right: 24px;
         user-select: none;
-
-        &:last-child {
-            margin-right: 0;
-        }
+        @include global.column-gap(24px);
 
         &:hover {
             opacity: 0.8;

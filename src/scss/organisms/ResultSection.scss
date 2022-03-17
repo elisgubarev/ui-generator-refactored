@@ -1,4 +1,5 @@
 @use "../atoms/colors.scss" as color;
+@use "../atoms/global.scss";
 
 .result-section {
     background-color: color.$accent-background;
@@ -12,10 +13,7 @@
         align-items: center;
 
         & > * {
-            margin-bottom: 40px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+            @include global.row-gap(40px);
         }
     }
 }
