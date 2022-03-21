@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import { composeClassList } from '../../functions/composeClassList';
-import TypePicker from "../../components/molecules/TypePicker";
-import CategoryPicker from "../../components/molecules/CategoryPicker";
-import ColorPicker from '../../components/molecules/ColorPicker';
-import Toggle from '../../components/molecules/Toggle';
-import Logo from '../../components/molecules/Logo';
-import H3Title from './H3Title';
-import Share from '../../components/molecules/Share';
-import SidebarDownload from './SidebarDownload';
+import TypePicker from "../molecules/TypePicker";
+import CategoryPicker from "../molecules/CategoryPicker";
+import ColorPicker from '../molecules/ColorPicker';
+import Toggle from '../molecules/Toggle';
+import Logo from '../molecules/Logo';
+import H3Title from '../organisms/H3Title';
+import Share from '../molecules/Share';
+import DownloadDesktop from '../organisms/DownloadDesktop';
 
 type RowProps = {
     className?: string;
@@ -31,7 +31,7 @@ const Sidebar: FC<Props> = (props) => {
     return (
         <div className={className}>
             <div className="sidebar__wrapper">
-                <SidebarDownload />
+                <DownloadDesktop />
                 <Row className="sidebar__row_logo">
                     <H3Title>
                         <Logo href="/" tagline>UI Generator</Logo>

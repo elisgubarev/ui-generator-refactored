@@ -1,3 +1,4 @@
+@use "atoms/default.scss";
 @use "molecules/Button";
 @use "molecules/TypePicker";
 @use "molecules/CategoryPicker";
@@ -15,33 +16,14 @@
 @use "organisms/Sidebar.scss";
 @use "organisms/ResultSection.scss";
 @use "organisms/H1Title.scss";
-@use "organisms/SidebarDownload.scss";
+@use "organisms/DownloadDesktop.scss";
 @use "organisms/Footer.scss";
 @use "organisms/H2Title.scss";
+@use "organisms/BottomInfoLayout.scss";
 
-@use './atoms/global.scss';
+@use "./atoms/global.scss";
 
-body {
-  font-family: "Lato", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  line-height: 0;
-  margin: 0;
-}
 
-button,
-input[type="submit"],
-input[type="reset"] {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  outline: inherit;
-}
-
-a {
-  text-decoration: none;
-}
 
 //for testing
 .dev-main {
