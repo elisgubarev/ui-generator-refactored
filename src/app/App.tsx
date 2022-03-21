@@ -5,6 +5,8 @@ import H1Title from '../components/organisms/H1Title';
 import Testimonial from '../components/molecules/Testimonial';
 import photo from '../assets/images/photo.png';
 import Footer from '../components/organisms/Footer';
+import H2Title from '../components/organisms/H2Title';
+import Link from '../components/molecules/Link';
 
 
 function App() {
@@ -13,7 +15,9 @@ function App() {
             <Sidebar />
             <div className="dev-main">
                 <ResultSection>
-                    <H1Title heading="Generate and Download Mockup UI" />
+                    <H1Title>
+                        Generate and Download Mockup UI
+                    </H1Title>
                     <Result />
                 </ResultSection>
                 <Testimonial
@@ -23,6 +27,9 @@ function App() {
                 >
                     Unicorn Platform is by far the <b>easiest tool</b> I've ever used to launch a landing page.
                 </Testimonial>
+                <H2Title >
+                    UI Generator was brought to you by <Link href="https://unicornplatform.com" target="_blank">Unicorn Platform</Link> 😎
+                </H2Title>
                 <Footer />
             </div>
         </div>
