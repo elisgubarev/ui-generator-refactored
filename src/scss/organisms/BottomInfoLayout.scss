@@ -1,2 +1,12 @@
+@use "../atoms/global.scss";
+
 .bottom-info-layout {
+    &__wrapper {
+        @include global.column-flex-center;
+        padding: 64px 24px;
+    }
+
+    &__row {
+        @include global.row-gap(64px);
+    }
 }

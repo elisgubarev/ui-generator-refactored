@@ -1,13 +1,12 @@
 @use "../atoms/colors.scss" as color;
 @use "../atoms/text_styles.scss" as text;
+@use "../atoms/global.scss";
 
 .h1-title {
     text-align: center;
 
     &__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include global.column-flex-center;
     }
 
     &__h1 {

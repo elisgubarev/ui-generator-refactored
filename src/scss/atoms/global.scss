@@ -16,6 +16,12 @@ $sidebar-width: 300px;
   align-items: center;
 }
 
+@mixin column-flex-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @mixin row-gap($gap) {
   margin-bottom: $gap;
   &:last-child {
