@@ -1,0 +1,24 @@
+@use "../atoms/colors.scss" as color;
+@use "../atoms/text_styles.scss" as text;
+@use "../atoms/global.scss";
+
+.h2-title {
+    &__wrapper {
+        @include global.flex-center;
+    }
+
+    &__h2 {
+        max-width: 435px;
+        margin-right: 64px;
+    }
+
+    &__subtitle {
+        @include text.primary;
+        color: color.$neutral-1;
+        max-width: 435px;
+    }
+
+    p {
+        @include global.row-gap(16px);
+    }
+}

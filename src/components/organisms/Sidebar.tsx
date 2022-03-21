@@ -5,7 +5,7 @@ import CategoryPicker from "../../components/molecules/CategoryPicker";
 import ColorPicker from '../../components/molecules/ColorPicker';
 import Toggle from '../../components/molecules/Toggle';
 import Logo from '../../components/molecules/Logo';
-import SidebarSection from '../../components/organisms/SidebarSection';
+import H3Title from './H3Title';
 import Share from '../../components/molecules/Share';
 import SidebarDownload from './SidebarDownload';
 
@@ -33,35 +33,35 @@ const Sidebar: FC<Props> = (props) => {
             <div className="sidebar__wrapper">
                 <SidebarDownload />
                 <Row className="sidebar__row_logo">
-                    <SidebarSection>
+                    <H3Title>
                         <Logo href="/" tagline>UI Generator</Logo>
-                    </SidebarSection>
+                    </H3Title>
                 </Row>
                 <Row>
-                    <SidebarSection label="UI Type">
+                    <H3Title label="UI Type">
                         <TypePicker />
-                    </SidebarSection>
+                    </H3Title>
                 </Row>
                 <Row>
-                    <SidebarSection label="Category">
+                    <H3Title label="Category">
                         <CategoryPicker />
-                    </SidebarSection>
+                    </H3Title>
                 </Row>
                 <Row>
-                    <SidebarSection label="Color">
+                    <H3Title label="Color">
                         <ColorPicker />
-                    </SidebarSection>
+                    </H3Title>
                 </Row>
                 <Row>
-                    <SidebarSection label="Appearance">
+                    <H3Title label="Appearance">
                         <Toggle changedValue='dark'>Dark background</Toggle>
                         <Toggle changedValue='mockup'>Mockup</Toggle>
-                    </SidebarSection>
+                    </H3Title>
                 </Row>
                 <Row>
-                    <SidebarSection label="Share with friends">
+                    <H3Title label="Share with friends">
                         <Share />
-                    </SidebarSection>
+                    </H3Title>
                 </Row>
 
             </div>

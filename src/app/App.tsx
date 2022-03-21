@@ -28,7 +28,7 @@ function App() {
                     Unicorn Platform is by far the <b>easiest tool</b> I've ever used to launch a landing page.
                 </Testimonial>
                 <H2Title >
-                    UI Generator was brought to you by <Link href="https://unicornplatform.com" target="_blank">Unicorn Platform</Link> 😎
+                    UI Generator was brought to you by <Link href="https://unicornplatform.com" target="_blank">Unicorn&nbsp;Platform</Link> 😎
                 </H2Title>
                 <Footer />
             </div>
