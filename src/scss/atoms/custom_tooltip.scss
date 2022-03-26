@@ -1,0 +1,32 @@
+@use "text_styles.scss" as text;
+@use "colors.scss" as color;
+@use "global.scss";
+@use "shadows.scss" as shadow;
+
+.__react_component_tooltip.tooltip-custom {
+    @include text.secondary;
+    background-color: color.$neutral-1;
+    padding: 4px 16px;
+    z-index: 500;
+    transition: opacity global.$animation-duration global.$easing;
+
+    &:before,
+    &:after {
+        border-bottom-color: color.$neutral-1 !important;
+    }
+
+    &.show {
+        opacity: 0.9;
+    }
+
+    &_image {
+        @include shadow.tooltip-image;
+        padding: 8px;
+        min-width: 416px;
+        line-height: 0;
+
+        &.show {
+            opacity: 1;
+        }
+    }
+}
