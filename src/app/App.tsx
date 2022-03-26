@@ -6,6 +6,7 @@ import Testimonial from '../components/molecules/Testimonial';
 import photo from '../assets/images/photo.png';
 import Footer from '../components/organisms/Footer';
 import BottomInfoLayout from '../components/layouts/BottomInfoLayout';
+import MainLayout from '../components/layouts/MainLayout';
 
 
 function App() {
@@ -13,14 +14,7 @@ function App() {
         <div className="dev-app">
             <Sidebar />
             <div className="dev-main">
-                <ResultSection>
-                    <H1Title>
-                        Generate and Download Mockup UI
-                    </H1Title>
-                    <Result />
-                </ResultSection>
-                <BottomInfoLayout />
-                <Footer />
+                <MainLayout />
             </div>
         </div>
     );
