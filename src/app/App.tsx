@@ -13,9 +13,7 @@ function App() {
     return (
         <div className="dev-app">
             <Sidebar />
-            <div className="dev-main">
-                <MainLayout />
-            </div>
+            <MainLayout />
         </div>
     );
 }

@@ -1,0 +1,5 @@
+@use "../atoms/global.scss";
+
+.main-layout {
+    margin-left: global.$sidebar-width;
+}

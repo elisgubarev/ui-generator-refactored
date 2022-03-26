@@ -20,13 +20,4 @@
 @use "organisms/Footer.scss";
 @use "organisms/H2Title.scss";
 @use "layouts/BottomInfoLayout.scss";
-
-@use "./atoms/global.scss";
-
-
-
-//for testing
-.dev-main {
-  margin-left: global.$sidebar-width;
-  // padding-top: 64px;
-}
+@use "layouts/MainLayout.scss";
