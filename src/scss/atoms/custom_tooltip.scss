@@ -6,7 +6,7 @@
 .__react_component_tooltip.tooltip-custom {
     @include text.secondary;
     background-color: color.$neutral-1;
-    padding: 4px 16px;
+    padding: 2px 16px;
     z-index: 500;
     transition: opacity global.$animation-duration global.$easing;
 

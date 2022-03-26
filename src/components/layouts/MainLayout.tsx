@@ -31,7 +31,7 @@ const MainLayout: FC<Props> = (props) => {
             <div className="main-layout__wrapper">
                 <Row>
                     <ResultSection>
-                        <H1Title>
+                        <H1Title >
                             Generate and Download Mockup UI
                         </H1Title>
                         <Result />

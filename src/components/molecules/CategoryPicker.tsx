@@ -38,17 +38,21 @@ type ItemProps = {
 }
 
 const CategoryItem: FC<ItemProps> = (props) => {
-    const {id, type, onClick} = props;
+    const { id, type, onClick } = props;
     const itemIcon = materialIcons[id][type];
 
-    return <button className={`category-picker__button 
-    ${isSelected(props) ? "category-picker__button_active" : ""}`}
-        onClick={onClick}
-    >
-        <span className={`category-picker__icon ${iconStyleClass}`}>
-            {itemIcon}
-        </span>
-    </button>
+    return (
+        <button
+            className={`category-picker__button ${isSelected(props) ? "category-picker__button_active" : ""}`}
+            onClick={onClick}
+            data-tip={categories[id][type]}
+            data-class="tooltip-custom"
+        >
+            <span className={`category-picker__icon ${iconStyleClass}`}>
+                {itemIcon}
+            </span>
+        </button>
+    );
 }
 
 type Props = {
