@@ -21,12 +21,12 @@ const Result: FC<Props> = (props) => {
     useEffect(() => {
         $('.js-image-spinner').removeClass('hidden');
         $('.js-loading-header').addClass('js-loading');
-    })
+    }, [state]);
 
     const handleOnLoad = () => {
-        setShadow(hasShadow());
         $('.js-image-spinner').addClass('hidden');
         $('.js-loading-header').removeClass('js-loading');
+        setShadow(hasShadow());
     }
 
     return (
