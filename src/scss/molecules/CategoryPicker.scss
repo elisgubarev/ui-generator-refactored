@@ -1,5 +1,8 @@
 @use "../atoms/colors.scss" as color;
 @use "../atoms/global.scss";
+@use "../atoms/breakpoints.scss";
+
+$border-radius: 10px;
 
 .category-picker {
     &__wrapper {
@@ -7,6 +10,22 @@
         flex-wrap: wrap;
         margin-right: -8px;
         margin-bottom: -24px;
+
+        @media (max-width: breakpoints.$tabs-collapse) {
+            margin-right: 0;
+            margin-bottom: 0;
+            flex-wrap: nowrap;
+            padding: 0 24px;
+        }
+
+        @media (max-width: breakpoints.$tabs-collapse2) {
+            overflow: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
     }
 
     &__button {
@@ -14,7 +33,7 @@
         margin-right: 8px;
         margin-bottom: 24px;
         padding: 12px 24px;
-        border-radius: 10px;
+        border-radius: $border-radius;
         user-select: none;
         cursor: pointer;
 
@@ -23,12 +42,30 @@
         }
 
         transition: background-color global.$animation-fast global.$easing;
+
+        @media (max-width: breakpoints.$tabs-collapse) {
+            margin-right: 0;
+            margin-bottom: 0;
+            background-color: color.$neutral-5;
+            border-radius: 0;
+
+            &:first-child {
+                border-radius: $border-radius 0 0 $border-radius;
+            }
+            &:last-child {
+                border-radius: 0 $border-radius $border-radius 0;
+            }
+        }
     }
 
     &__icon {
         color: color.$neutral-1;
 
         transition: color global.$animation-fast global.$easing;
+    }
+
+    @media (max-width: breakpoints.$tabs-collapse2) {
+        align-self: stretch;
     }
 }
 
