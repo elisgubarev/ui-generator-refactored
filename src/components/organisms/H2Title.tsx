@@ -18,7 +18,7 @@ const H2Title: FC<Props> = (props) => {
                         Unicorn Platform is a simple landing page builder. It is a tool for busy startup founders and marketeers.
                     </p>
                     <p>
-                        Sign up and join <b>16,448</b> makers.
+                        Sign up and join <b>19,853</b> makers.
                     </p>
                 </div>
             </div>

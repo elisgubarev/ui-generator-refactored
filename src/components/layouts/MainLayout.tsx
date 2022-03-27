@@ -12,6 +12,7 @@ import Toggle from '../molecules/Toggle';
 import Share from '../molecules/Share';
 import H1 from '../headings/H1';
 import Button from '../molecules/Button';
+import Spinner from '../molecules/Spinner';
 
 type RowProps = {
     className?: string;
@@ -36,6 +37,7 @@ const MainLayout: FC<Props> = (props) => {
     return (
         <div className={className}>
             <div className="main-layout__wrapper">
+                <Spinner />
                 <Button className="mobile-only" buttonType='download' fab>Download .png</Button>
                 <Row className="mobile-only">
                     <H1Title noTip>

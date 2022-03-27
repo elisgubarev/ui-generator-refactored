@@ -1,9 +1,14 @@
 @use "../atoms/global.scss";
+@use "../atoms/breakpoints.scss";
 
 .bottom-info-layout {
     &__wrapper {
         @include global.column-flex-center;
         padding: 64px 24px;
+
+        @media (max-width: breakpoints.$desktop) {
+            padding-top: 32px;
+        }
     }
 
     &__row {
