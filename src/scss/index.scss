@@ -1,6 +1,5 @@
 @use "atoms/default.scss";
 @use "atoms/custom_tooltip.scss";
-@use "atoms/global.scss";
 @use "molecules/Button";
 @use "molecules/TypePicker";
 @use "molecules/CategoryPicker";
@@ -23,11 +22,3 @@
 @use "organisms/H2Title.scss";
 @use "layouts/BottomInfoLayout.scss";
 @use "layouts/MainLayout.scss";
-
-.desktop-only {
-    @include global.desktop-only;
-}
-
-.mobile-only {
-    @include global.mobile-only;
-}

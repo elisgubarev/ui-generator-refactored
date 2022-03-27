@@ -4,7 +4,20 @@
 .main-layout {
     margin-left: global.$sidebar-width;
 
+    &__row > * {
+        @include global.row-gap(24px);
+    }
+
+    &__row.mobile-only {
+        @include global.column-flex-center;
+    }
+
     @media (max-width: breakpoints.$desktop) {
         margin-left: 0;
+        padding-top: 32px;
+
+        &__row {
+            @include global.row-gap(32px);
+        }
     }
 }

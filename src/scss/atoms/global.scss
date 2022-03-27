@@ -37,11 +37,11 @@ $sidebar-width: 300px;
 }
 @mixin desktop-only {
   @media (max-width: breakpoints.$desktop) {
-    display: none;
+    display: none !important;
   }
 }
 @mixin mobile-only {
   @media (min-width: (breakpoints.$desktop + 1)) {
-    display: none;
+    display: none !important;
   }
 }

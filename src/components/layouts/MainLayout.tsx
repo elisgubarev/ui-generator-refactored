@@ -9,6 +9,8 @@ import TypePicker from '../molecules/TypePicker'
 import CategoryPicker from '../molecules/CategoryPicker';
 import ColorPicker from '../molecules/ColorPicker';
 import Toggle from '../molecules/Toggle';
+import Share from '../molecules/Share';
+import H1 from '../headings/H1';
 
 type RowProps = {
     className?: string;
@@ -58,6 +60,12 @@ const MainLayout: FC<Props> = (props) => {
                 <Row className="mobile-only">
                     <Toggle changedValue="dark">Dark background</Toggle>
                     <Toggle changedValue="mockup">Mockup</Toggle>
+                </Row>
+                <Row className="mobile-only">
+                    <H1>
+                        Share with friends
+                    </H1>
+                    <Share />
                 </Row>
                 <Row>
                     <BottomInfoLayout />
