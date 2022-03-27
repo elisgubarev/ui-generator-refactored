@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { RootState } from '../../app/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeDark, changeMockup } from '../../app/contentSlice';
+import { addUrlParam } from '../../functions/addUrlParam';
 
 
 import { composeClassList } from "../../functions/composeClassList";
@@ -31,11 +32,16 @@ const Toggle: FC<Props> = (props) => {
     const className = composeClassList("toggle", props.className);
 
     const handleClick = () => {
+        let newState;
         if (changedValue === "dark") {
-            stateDark === 0 ? dispatch(changeDark(1)) : dispatch(changeDark(0));
+            stateDark === 0 ? newState = 1 : newState = 0;
+            dispatch(changeDark(newState));
+            addUrlParam('dark', newState)
         }
         if (changedValue === "mockup") {
-            stateMockup === 0 ? dispatch(changeMockup(1)) : dispatch(changeMockup(0));
+            stateMockup === 0 ? newState = 1 : newState = 0;
+            dispatch(changeMockup(newState));
+            addUrlParam('mockup', newState)
         }
     }
 

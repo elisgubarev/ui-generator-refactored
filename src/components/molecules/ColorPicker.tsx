@@ -5,6 +5,7 @@ import { changeColor } from "../../app/contentSlice";
 import { composeClassList } from "../../functions/composeClassList";
 import { isSelected } from "../../functions/isSelected";
 import { iconStyleClass, colors, brightColors, maxState } from '../../app/globalData';
+import { addUrlParam } from '../../functions/addUrlParam';
 import 'material-icons/iconfont/material-icons.css';
 
 type ItemProps = {
@@ -48,6 +49,7 @@ const ColorPicker: FC<Props> = (props) => {
 
     const handleClick = (itemId: number) => {
         dispatch(changeColor(itemId));
+        addUrlParam('color', itemId);
     }
 
     const renderItems = () => {

@@ -5,6 +5,7 @@ import { changeCategory } from '../../app/contentSlice'
 import { composeClassList } from '../../functions/composeClassList';
 import { isSelected } from '../../functions/isSelected';
 import { categories, materialIcons, iconStyleClass, maxState } from '../../app/globalData';
+import { addUrlParam } from '../../functions/addUrlParam';
 import 'material-icons/iconfont/material-icons.css';
 
 type ItemProps = {
@@ -47,6 +48,7 @@ const CategoryPicker: FC<Props> = (props) => {
 
     const handleClick = (buttonId: number) => {
         dispatch(changeCategory(buttonId));
+        addUrlParam('category', buttonId);
     }
 
     const renderItems = () => {

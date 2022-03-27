@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { changeType } from '../../app/contentSlice';
 import { composeClassList } from "../../functions/composeClassList";
 import { isSelected } from "../../functions/isSelected";
+import { addUrlParam } from '../../functions/addUrlParam';
 
 type ItemProps = {
     id: number;
@@ -37,6 +38,7 @@ const TypePicker: FC<Props> = (props) => {
 
     const handleClick = (buttonId: number) => {
         dispatch(changeType(buttonId));
+        addUrlParam('type', buttonId);
     }
 
     return (
