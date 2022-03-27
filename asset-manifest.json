@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.1efd8eb4.css",
-    "main.js": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.fa194497.js",
+    "main.css": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.628974ae.css",
+    "main.js": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.eb47a131.js",
     "static/media/material-icons-two-tone.woff": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-two-tone.169d9845612b754f6086.woff",
     "static/media/material-icons-two-tone.woff2": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-two-tone.20196d7544af60588088.woff2",
     "static/media/material-icons-round.woff": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-round.da8b129efeb630b26ed6.woff",
@@ -26,11 +26,11 @@
     "static/media/facebook_mono.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/facebook_mono.19219a7ada2540ede5228de5f235f144.svg",
     "static/media/quotes.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/quotes.e17e620396260bd4ef671b2e28ab026b.svg",
     "static/media/download.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/download.8194773b3ff7f9befc19fc525b284264.svg",
-    "main.1efd8eb4.css.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.1efd8eb4.css.map",
-    "main.fa194497.js.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.fa194497.js.map"
+    "main.628974ae.css.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.628974ae.css.map",
+    "main.eb47a131.js.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.eb47a131.js.map"
   },
   "entrypoints": [
-    "static/css/main.1efd8eb4.css",
-    "static/js/main.fa194497.js"
+    "static/css/main.628974ae.css",
+    "static/js/main.eb47a131.js"
   ]
 }
