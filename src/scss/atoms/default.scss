@@ -29,3 +29,7 @@ a {
 .mobile-only {
     @include global.mobile-only;
 }
+
+.hidden {
+    visibility: hidden;
+}

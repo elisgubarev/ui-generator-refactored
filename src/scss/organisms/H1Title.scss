@@ -19,4 +19,14 @@
         color: color.$neutral-1;
         max-width: 500px;
     }
+
+    &__heading-wrapper {
+        position: relative;
+    }
+
+    &__spinner {
+        position: absolute;
+        top: -12px;
+        right: -56px;
+    }
 }

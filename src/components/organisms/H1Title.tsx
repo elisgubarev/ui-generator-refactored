@@ -5,6 +5,7 @@ import landing from '../../assets/images/useCaseLanding.png';
 import prototype from '../../assets/images/useCasePrototype.png';
 import presentation from '../../assets/images/useCasePresentation.png';
 import blog from '../../assets/images/useCaseBlog.png';
+import Spinner from '../molecules/Spinner';
 
 type TipProps = {
     noTip?: boolean;
@@ -14,6 +15,7 @@ type TipProps = {
 const Tip: FC<TipProps> = (props) => {
     const image = [landing, prototype, presentation, blog];
     const { id, noTip } = props;
+
     if (noTip) {
         return (
             <>
@@ -40,6 +42,7 @@ const Tip: FC<TipProps> = (props) => {
 type Props = {
     className?: string;
     noTip?: boolean;
+    spinner?: boolean;
 }
 
 const H1Title: FC<Props> = (props) => {
@@ -47,7 +50,10 @@ const H1Title: FC<Props> = (props) => {
     return (
         <div className={className}>
             <div className="h1-title__wrapper">
-                <H1 className="h1-title__h1">{props.children}</H1>
+                <div className="h1-title__heading-wrapper">
+                    <H1 className="h1-title__h1">{props.children}</H1>
+                    {props.spinner && <Spinner className="h1-title__spinner js-image-spinner hidden" />}
+                </div>
                 <div className="h1-title__subtitle">
                     Create mockup (fake) UI for your{' '}
                     <Tip id={0} noTip={props.noTip}>landing page</Tip>,{' '}

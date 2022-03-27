@@ -1,8 +1,9 @@
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { RootState } from '../../app/store';
 import { useSelector } from 'react-redux';
 import { composeClassList } from '../../functions/composeClassList';
 import { generateSrc } from '../../functions/generateSrc';
+import $ from 'jquery';
 
 type Props = {
     className?: string;
@@ -17,8 +18,13 @@ const Result: FC<Props> = (props) => {
     }
     const [shadow, setShadow] = useState(hasShadow());
 
+    useEffect(() => {
+        $('.js-image-spinner').removeClass('hidden');
+    })
+
     const handleOnLoad = () => {
         setShadow(hasShadow());
+        $('.js-image-spinner').addClass('hidden');
     }
 
     return (
