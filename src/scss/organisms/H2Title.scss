@@ -1,15 +1,26 @@
 @use "../atoms/colors.scss" as color;
 @use "../atoms/text_styles.scss" as text;
 @use "../atoms/global.scss";
+@use "../atoms/breakpoints.scss";
 
 .h2-title {
     &__wrapper {
         @include global.flex-center;
+
+        @media (max-width: breakpoints.$tablet) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__h2 {
         max-width: 435px;
         margin-right: 64px;
+
+        @media (max-width: breakpoints.$tablet) {
+            margin-right: 0;
+            margin-bottom: 32px;
+        }
     }
 
     &__subtitle {
