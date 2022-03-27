@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.67a38477.css",
-    "main.js": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.aa165fdc.js",
+    "main.css": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.73e3b05e.css",
+    "main.js": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.215ef750.js",
     "static/media/material-icons-two-tone.woff": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-two-tone.169d9845612b754f6086.woff",
     "static/media/material-icons-two-tone.woff2": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-two-tone.20196d7544af60588088.woff2",
     "static/media/material-icons-round.woff": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-round.da8b129efeb630b26ed6.woff",
@@ -12,15 +12,25 @@
     "static/media/material-icons-outlined.woff2": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-outlined.5520f2737f1bb3d8a011.woff2",
     "static/media/material-icons-sharp.woff2": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-sharp.74f9d37f0ed879edf5af.woff2",
     "static/media/material-icons.woff2": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons.a3e4b8576868d394c1da.woff2",
+    "static/media/useCasePresentation.png": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/useCasePresentation.f8b6d16451964d635fa7.png",
+    "static/media/photo.png": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/photo.eb702fcceedc88b16fdc.png",
+    "static/media/useCasePrototype.png": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/useCasePrototype.d03819856aeebece45f6.png",
+    "static/media/useCaseLanding.png": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/useCaseLanding.9eb66b5dd499bc477ebf.png",
+    "static/media/useCaseBlog.png": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/useCaseBlog.b9cc74f725c452c3b134.png",
     "static/media/logo.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/logo.ee339ca3591e79431051c4b80d39d8fb.svg",
+    "static/media/instagram_mono.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/instagram_mono.6932311ee188505028faa48a177dfb6f.svg",
     "static/media/twitter.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/twitter.2255b06f128343aa90147484238ee475.svg",
+    "static/media/twitter_mono.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/twitter_mono.66afb43d713b3e19c4d728cdde00e178.svg",
     "index.html": "https://elisgubarev.github.io/UI-Generator-refactoring/index.html",
     "static/media/facebook.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/facebook.4df9493e3bc4d0078d2d69fa18f6360e.svg",
-    "main.67a38477.css.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.67a38477.css.map",
-    "main.aa165fdc.js.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.aa165fdc.js.map"
+    "static/media/facebook_mono.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/facebook_mono.19219a7ada2540ede5228de5f235f144.svg",
+    "static/media/quotes.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/quotes.e17e620396260bd4ef671b2e28ab026b.svg",
+    "static/media/download.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/download.8194773b3ff7f9befc19fc525b284264.svg",
+    "main.73e3b05e.css.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.73e3b05e.css.map",
+    "main.215ef750.js.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.215ef750.js.map"
   },
   "entrypoints": [
-    "static/css/main.67a38477.css",
-    "static/js/main.aa165fdc.js"
+    "static/css/main.73e3b05e.css",
+    "static/js/main.215ef750.js"
   ]
 }
