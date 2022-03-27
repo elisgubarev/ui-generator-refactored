@@ -2,7 +2,6 @@ import Sidebar from '../components/layouts/Sidebar';
 import MainLayout from '../components/layouts/MainLayout';
 import ReactTooltip from 'react-tooltip';
 
-
 function App() {
     return (
         <>

@@ -1,4 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import queryString from 'query-string';
+import { returnStateIfValid } from "../functions/returnStateIfValid";
+import { maxState } from "./globalData";
+
+const urlParams = queryString.parse(window.location.search);
 
 export interface ContentState {
     type: number,
@@ -9,11 +14,11 @@ export interface ContentState {
 }
 
 const initialState: ContentState = {
-    type: 0,
-    category: 0,
-    dark: 0,
-    mockup: 0,
-    color: 0,
+    type: returnStateIfValid(urlParams.type, maxState.type),
+    category: returnStateIfValid(urlParams.category, maxState.category),
+    dark: returnStateIfValid(urlParams.dark, maxState.dark),
+    mockup: returnStateIfValid(urlParams.mockup, maxState.mockup),
+    color: returnStateIfValid(urlParams.color, maxState.color),
 }
 
 export const contentSlice = createSlice({
