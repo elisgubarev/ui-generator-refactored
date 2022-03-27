@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { changeCategory } from '../../app/contentSlice'
 import { composeClassList } from '../../functions/composeClassList';
 import { isSelected } from '../../functions/isSelected';
-import {categories, materialIcons, iconStyleClass} from '../../app/globalData';
+import { categories, materialIcons, iconStyleClass } from '../../app/globalData';
 import 'material-icons/iconfont/material-icons.css';
 
 type ItemProps = {
@@ -12,6 +12,7 @@ type ItemProps = {
     selected: number;
     type: number;
     onClick: () => void;
+    noTip?: boolean;
 }
 
 const CategoryItem: FC<ItemProps> = (props) => {
@@ -22,7 +23,7 @@ const CategoryItem: FC<ItemProps> = (props) => {
         <button
             className={`category-picker__button ${isSelected(props) ? "category-picker__button_active" : ""}`}
             onClick={onClick}
-            data-tip={categories[id][type]}
+            data-tip={!props.noTip ? categories[id][type] : null}
             data-class="tooltip-custom"
         >
             <span className={`category-picker__icon ${iconStyleClass}`}>
@@ -34,6 +35,7 @@ const CategoryItem: FC<ItemProps> = (props) => {
 
 type Props = {
     className?: string;
+    noTip?: boolean;
 }
 
 const CategoryPicker: FC<Props> = (props) => {
@@ -51,7 +53,7 @@ const CategoryPicker: FC<Props> = (props) => {
         const itemsArray = [];
         for (let itemId = 0; itemId < 8; itemId++) {
             itemsArray.push(
-                <CategoryItem id={itemId} key={itemId} selected={stateCategory} type={stateType} onClick={() => handleClick(itemId)} />
+                <CategoryItem id={itemId} key={itemId} selected={stateCategory} noTip={props.noTip} type={stateType} onClick={() => handleClick(itemId)} />
             );
         }
         return itemsArray;

@@ -4,6 +4,7 @@
 
 .type-picker {
   width: 100%;
+  max-width: 400px;
 
   &__wrapper {
     @include global.flex-center;

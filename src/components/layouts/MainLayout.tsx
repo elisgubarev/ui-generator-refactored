@@ -5,6 +5,10 @@ import Footer from '../organisms/Footer';
 import H1Title from '../organisms/H1Title';
 import ResultSection from '../organisms/ResultSection';
 import BottomInfoLayout from './BottomInfoLayout';
+import TypePicker from '../molecules/TypePicker'
+import CategoryPicker from '../molecules/CategoryPicker';
+import ColorPicker from '../molecules/ColorPicker';
+import Toggle from '../molecules/Toggle';
 
 type RowProps = {
     className?: string;
@@ -29,13 +33,31 @@ const MainLayout: FC<Props> = (props) => {
     return (
         <div className={className}>
             <div className="main-layout__wrapper">
+                <Row className="mobile-only">
+                    <H1Title noTip>
+                        Generate and Download Mockup UI
+                    </H1Title>
+                </Row>
+                <Row className="mobile-only">
+                    <TypePicker />
+                </Row>
+                <Row className="mobile-only">
+                    <CategoryPicker noTip />
+                </Row>
                 <Row>
                     <ResultSection>
-                        <H1Title >
+                        <H1Title className="desktop-only" >
                             Generate and Download Mockup UI
                         </H1Title>
                         <Result />
                     </ResultSection>
+                </Row>
+                <Row className='mobile-only'>
+                    <ColorPicker />
+                </Row>
+                <Row className="mobile-only">
+                    <Toggle changedValue="dark">Dark background</Toggle>
+                    <Toggle changedValue="mockup">Mockup</Toggle>
                 </Row>
                 <Row>
                     <BottomInfoLayout />

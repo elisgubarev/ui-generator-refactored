@@ -4,6 +4,8 @@
 
 .toggle {
     width: 100%;
+    max-width: 300px;
+
     &__wrapper {
         display: flex;
         align-items: center;

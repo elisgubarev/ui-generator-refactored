@@ -21,11 +21,3 @@ input[type="reset"] {
 a {
     text-decoration: none;
 }
-
-.desktop-only {
-    @include global.desktop-only;
-}
-
-.mobile-only {
-    @include global.mobile-only;
-}
