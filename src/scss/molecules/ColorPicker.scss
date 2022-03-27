@@ -1,6 +1,7 @@
 @use "../atoms/colors.scss" as color;
 @use "../atoms/global.scss";
 @use "../atoms/shadows.scss" as shadow;
+@use "../atoms/breakpoints.scss";
 
 .color-picker {
     &__wrapper {
@@ -8,6 +9,12 @@
         flex-wrap: wrap;
         margin-right: -16px;
         margin-bottom: -24px;
+
+        @media (max-width: breakpoints.$desktop) {
+            max-width: 420px;
+            justify-content: center;
+            margin-right: -24px;
+        }
     }
 
     &__button {
@@ -21,7 +28,14 @@
         cursor: pointer;
         user-select: none;
 
-        transition: transform global.$animation-fast global.$easing, background-color global.$animation-fast global.$easing;
+        transition: transform global.$animation-fast global.$easing,
+            background-color global.$animation-fast global.$easing;
+
+        @media (max-width: breakpoints.$desktop) {
+            width: 56px;
+            height: 56px;
+            margin-right: 24px;
+        }
     }
 
     &__icon {

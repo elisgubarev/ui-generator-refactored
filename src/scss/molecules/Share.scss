@@ -1,4 +1,5 @@
 @use "../atoms/global.scss";
+@use "../atoms/breakpoints.scss";
 
 .share {
     &__item {
@@ -13,9 +14,17 @@
 
         transition: opacity global.$animation-duration global.$easing,
             transform global.$animation-duration global.$easing;
+
+        @media (max-width: breakpoints.$desktop) {
+            @include global.column-gap(32px);
+        }
     }
 
     &__icon {
         width: 28px;
+
+        @media (max-width: breakpoints.$desktop) {
+            width: 32px;
+        }
     }
 }
