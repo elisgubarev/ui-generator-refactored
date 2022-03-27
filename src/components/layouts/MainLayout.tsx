@@ -37,12 +37,12 @@ const MainLayout: FC<Props> = (props) => {
         <div className={className}>
             <div className="main-layout__wrapper">
                 <Button className="mobile-only" buttonType='download' fab>Download .png</Button>
-                <Row className="mobile-only">
+                <Row className="mobile-only main-layout__row_padding">
                     <H1Title noTip>
                         Generate and Download Mockup UI
                     </H1Title>
                 </Row>
-                <Row className="mobile-only">
+                <Row className="mobile-only main-layout__row_padding">
                     <TypePicker />
                 </Row>
                 <Row className="mobile-only">
@@ -56,14 +56,14 @@ const MainLayout: FC<Props> = (props) => {
                         <Result />
                     </ResultSection>
                 </Row>
-                <Row className='mobile-only'>
+                <Row className='mobile-only main-layout__row_padding'>
                     <ColorPicker />
                 </Row>
-                <Row className="mobile-only">
+                <Row className="mobile-only main-layout__row_padding">
                     <Toggle changedValue="dark">Dark background</Toggle>
                     <Toggle changedValue="mockup">Mockup</Toggle>
                 </Row>
-                <Row className="main-layout__share mobile-only">
+                <Row className="main-layout__share mobile-only main-layout__row_padding">
                     <H1>
                         Share with friends
                     </H1>

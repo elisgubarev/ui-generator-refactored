@@ -1,6 +1,7 @@
 @use "../atoms/colors.scss" as color;
 @use "../atoms/text_styles.scss" as text;
 @use "../atoms/global.scss";
+@use "../atoms/breakpoints.scss";
 
 .h1-title {
     text-align: center;
@@ -12,6 +13,10 @@
     &__h1 {
         margin-bottom: 16px;
         max-width: 420px;
+
+        @media (max-width: breakpoints.$mobile) {
+            max-width: 306px;
+        }
     }
 
     &__subtitle {

@@ -16,5 +16,9 @@
         & > * {
             @include global.row-gap(40px);
         }
+
+        @media (max-width: breakpoints.$mobile) {
+            padding: 32px 16px;
+        }
     }
 }
