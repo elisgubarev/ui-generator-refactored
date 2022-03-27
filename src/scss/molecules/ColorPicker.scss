@@ -44,6 +44,10 @@
         color: color.$white;
 
         transition: color global.$animation-fast global.$easing, opacity global.$animation-fast global.$easing;
+
+        @media (max-width: breakpoints.$desktop) {
+            font-size: 32px;
+        }
     }
 }
 

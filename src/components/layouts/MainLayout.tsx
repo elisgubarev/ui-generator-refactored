@@ -63,13 +63,13 @@ const MainLayout: FC<Props> = (props) => {
                     <Toggle changedValue="dark">Dark background</Toggle>
                     <Toggle changedValue="mockup">Mockup</Toggle>
                 </Row>
-                <Row className="mobile-only">
+                <Row className="main-layout__share mobile-only">
                     <H1>
                         Share with friends
                     </H1>
                     <Share />
                 </Row>
-                <Row>
+                <Row className="main-layout__bottom-info">
                     <BottomInfoLayout />
                 </Row>
                 <Row>

@@ -12,6 +12,11 @@
         justify-content: space-between;
     }
 
+    &__label {
+        @include text.primary;
+        color: color.$neutral-1;
+    }
+
     &__button {
         width: 34px;
         padding: 3px;
