@@ -1,4 +1,6 @@
 @use "../atoms/global.scss";
+@use "../atoms/text_styles.scss" as text;
+@use "../atoms/colors.scss" as color;
 
 .h3-title {
     width: 100%;
@@ -9,5 +11,16 @@
 
     &__content > * {
         @include global.row-gap(20px);
+    }
+
+    &__label-wrapper {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__category-name {
+        @include text.secondary;
+        color: color.$neutral-2;
+        margin-left: 4px;
     }
 }

@@ -5,7 +5,6 @@ import landing from '../../assets/images/useCaseLanding.png';
 import prototype from '../../assets/images/useCasePrototype.png';
 import presentation from '../../assets/images/useCasePresentation.png';
 import blog from '../../assets/images/useCaseBlog.png';
-import { idText } from 'typescript';
 
 type TipProps = {
     noTip?: boolean;

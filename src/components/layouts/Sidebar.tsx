@@ -43,7 +43,7 @@ const Sidebar: FC<Props> = (props) => {
                     </H3Title>
                 </Row>
                 <Row>
-                    <H3Title label="Category">
+                    <H3Title label="Category" showCategoryName>
                         <CategoryPicker />
                     </H3Title>
                 </Row>
