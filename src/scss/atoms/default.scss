@@ -1,3 +1,5 @@
+@use "global.scss";
+
 body {
     font-family: "Lato", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -18,4 +20,12 @@ input[type="reset"] {
 
 a {
     text-decoration: none;
+}
+
+.desktop-only {
+    @include global.desktop-only;
+}
+
+.mobile-only {
+    @include global.mobile-only;
 }

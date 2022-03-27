@@ -1,6 +1,7 @@
 @use "../atoms/colors" as color;
 @use "../atoms/text_styles" as text;
 @use "../atoms/global";
+@use "../atoms/breakpoints.scss";
 
 .sidebar {
     max-width: global.$sidebar-width;
@@ -21,4 +22,6 @@
             margin-bottom: 42px;
         }
     }
+
+    @include global.desktop-only;
 }

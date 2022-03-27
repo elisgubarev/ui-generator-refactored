@@ -1,7 +1,8 @@
+@use "breakpoints.scss";
+
 $animation-duration: 0.2s;
 $animation-fast: 0.09s;
 $easing: ease;
-
 $sidebar-width: 300px;
 
 @mixin flex-center {
@@ -32,5 +33,15 @@ $sidebar-width: 300px;
   margin-right: $gap;
   &:last-child {
     margin-right: 0;
+  }
+}
+@mixin desktop-only {
+  @media (max-width: breakpoints.$desktop) {
+    display: none;
+  }
+}
+@mixin mobile-only {
+  @media (min-width: (breakpoints.$desktop + 1)) {
+    display: none;
   }
 }

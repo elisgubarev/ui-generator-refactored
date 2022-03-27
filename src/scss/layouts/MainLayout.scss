@@ -1,5 +1,10 @@
 @use "../atoms/global.scss";
+@use "../atoms/breakpoints.scss";
 
 .main-layout {
     margin-left: global.$sidebar-width;
+
+    @media (max-width: breakpoints.$desktop) {
+        margin-left: 0;
+    }
 }
