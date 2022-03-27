@@ -56,7 +56,7 @@ const MainLayout: FC<Props> = (props) => {
                         <Result />
                     </ResultSection>
                 </Row>
-                <Row className='mobile-only main-layout__row_padding'>
+                <Row className='mobile-only main-layout__row_padding main-layout__row_padding-large'>
                     <ColorPicker />
                 </Row>
                 <Row className="mobile-only main-layout__row_padding">
