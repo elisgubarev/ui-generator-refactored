@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeColor } from "../../app/contentSlice";
 import { composeClassList } from "../../functions/composeClassList";
 import { isSelected } from "../../functions/isSelected";
-import { iconStyleClass, colors, brightColors } from '../../app/globalData';
+import { iconStyleClass, colors, brightColors, maxState } from '../../app/globalData';
 import 'material-icons/iconfont/material-icons.css';
 
 type ItemProps = {
@@ -52,7 +52,7 @@ const ColorPicker: FC<Props> = (props) => {
 
     const renderItems = () => {
         const itemsArray = [];
-        for (let itemId = 0; itemId < 8; itemId++) {
+        for (let itemId = 0; itemId <= maxState.color; itemId++) {
             itemsArray.push(
                 <PickerItem id={itemId} key={itemId} selected={stateColor} onClick={() => handleClick(itemId)} dark={stateDark} />
             );

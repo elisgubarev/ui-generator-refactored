@@ -41,3 +41,11 @@ export const url = {
     facebook: "https://fb.com/unicornplatform",
     instagram: "https://www.instagram.com/unicornplatform"
 }
+
+export const maxState = {
+    type: 1,
+    category: 7,
+    dark: 1,
+    mockup: 1,
+    color: 7
+}

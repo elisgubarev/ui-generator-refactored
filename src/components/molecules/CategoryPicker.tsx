@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { changeCategory } from '../../app/contentSlice'
 import { composeClassList } from '../../functions/composeClassList';
 import { isSelected } from '../../functions/isSelected';
-import { categories, materialIcons, iconStyleClass } from '../../app/globalData';
+import { categories, materialIcons, iconStyleClass, maxState } from '../../app/globalData';
 import 'material-icons/iconfont/material-icons.css';
 
 type ItemProps = {
@@ -51,7 +51,7 @@ const CategoryPicker: FC<Props> = (props) => {
 
     const renderItems = () => {
         const itemsArray = [];
-        for (let itemId = 0; itemId < 8; itemId++) {
+        for (let itemId = 0; itemId <= maxState.category; itemId++) {
             itemsArray.push(
                 <CategoryItem id={itemId} key={itemId} selected={stateCategory} noTip={props.noTip} type={stateType} onClick={() => handleClick(itemId)} />
             );
