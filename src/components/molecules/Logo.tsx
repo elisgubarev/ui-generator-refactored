@@ -2,11 +2,12 @@ import { FC } from 'react';
 import { composeClassList } from '../../functions/composeClassList';
 import Link from './Link';
 import logo from '../../assets/svg/logo.svg';
+import { url } from '../../app/globalData';
 
 const Tagline: FC = () => {
     return (
         <div className="logo__tagline">
-            By <Link className="logo__tagline-link" href="https://unicornplatform.com" target="_blank">Unicorn Platform</Link>
+            By <Link className="logo__tagline-link" href={url.unicorn} target="_blank">Unicorn Platform</Link>
         </div>
     );
 }

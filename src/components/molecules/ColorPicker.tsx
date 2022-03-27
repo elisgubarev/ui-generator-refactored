@@ -4,21 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeColor } from "../../app/contentSlice";
 import { composeClassList } from "../../functions/composeClassList";
 import { isSelected } from "../../functions/isSelected";
-
+import { iconStyleClass, colors, brightColors } from '../../app/globalData';
 import 'material-icons/iconfont/material-icons.css';
-const iconStyleClass = "material-icons-round";
-
-const colors = [
-    ['#4D66F3', '#4BCFFA'],
-    ['#6200EE', '#BA87F6'],
-    ['#FC5068', '#FC5068'],
-    ['#21D1A1', '#21D1A1'],
-    ['#FDDD59', '#FDDD59'],
-    ['#FC9F44', '#FC9F44'],
-    ['#FC3F34', '#FC3F34'],
-    ['#2B2E49', '#FAFAFA'],
-];
-const brightColors = ['#FDDD59', '#FAFAFA'];
 
 type ItemProps = {
     id: number;

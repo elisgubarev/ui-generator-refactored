@@ -4,31 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { changeCategory } from '../../app/contentSlice'
 import { composeClassList } from '../../functions/composeClassList';
 import { isSelected } from '../../functions/isSelected';
-
+import {categories, materialIcons, iconStyleClass} from '../../app/globalData';
 import 'material-icons/iconfont/material-icons.css';
-const iconStyleClass = "material-icons-round";
-
-const categories = [
-    ["Dashboard 1", "Sign up"],
-    ["Dashboard 2", "Messenger"],
-    ["Dashboard 3", "Profile"],
-    ["Kanban", "Social feed"],
-    ["CRM", "Dashboard"],
-    ["Finance", "E-commerce"],
-    ["Calendar", "Finance"],
-    ["Messenger", "Music app"],
-];
-
-const materialIcons = [
-    ["equalizer", "lock"],
-    ["donut_large", "question_answer"],
-    ["dashboard", "person"],
-    ["view_kanban", "thumb_up_alt"],
-    ["table_view", "pie_chart"],
-    ["account_balance_wallet", "shopping_cart"],
-    ["event_note", "credit_card"],
-    ["question_answer", "music_note"],
-];
 
 type ItemProps = {
     id: number;

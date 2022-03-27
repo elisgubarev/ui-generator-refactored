@@ -5,6 +5,7 @@ import Link from '../molecules/Link';
 import Button from '../molecules/Button';
 import Testimonial from '../molecules/Testimonial';
 import photo from '../../assets/images/photo.png';
+import {url} from '../../app/globalData';
 
 type RowProps = {
     className?: string;
@@ -31,13 +32,13 @@ const BottomInfoLayout: FC<Props> = (props) => {
             <div className="bottom-info-layout__wrapper">
                 <Row>
                     <H2Title>
-                        UI Generator was brought to you by <Link href="https://unicornplatform.com" target="_blank">Unicorn&nbsp;Platform</Link> 😎
+                        UI Generator was brought to you by <Link href={url.unicorn} target="_blank">Unicorn&nbsp;Platform</Link> 😎
                     </H2Title>
                 </Row>
                 <Row>
                     <Button
                         buttonType='link'
-                        href='https://unicornplatform.com'
+                        href={url.unicorn}
                         target='_blank'
                     >
                         Try Unicorn Platform for free
