@@ -51,7 +51,9 @@ const H1Title: FC<Props> = (props) => {
         <div className={className}>
             <div className="h1-title__wrapper">
                 <div className="h1-title__heading-wrapper">
-                    <H1 className="h1-title__h1">{props.children}</H1>
+                    <H1 className={`h1-title__h1 ${props.spinner ? "js-loading-header" : ""}`}>
+                        {props.children}
+                    </H1>
                     {props.spinner && <Spinner className="h1-title__spinner js-image-spinner hidden" />}
                 </div>
                 <div className="h1-title__subtitle">
