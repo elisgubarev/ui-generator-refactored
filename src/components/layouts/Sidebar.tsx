@@ -34,7 +34,7 @@ const Sidebar: FC<Props> = (props) => {
                 <DownloadDesktop />
                 <Row className="sidebar__row_logo">
                     <H3Title>
-                        <Logo href="/" tagline>UI Generator</Logo>
+                        <Logo href={process.env.PUBLIC_URL} tagline>UI Generator</Logo>
                     </H3Title>
                 </Row>
                 <Row>
