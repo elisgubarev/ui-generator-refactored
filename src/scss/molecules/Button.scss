@@ -1,7 +1,8 @@
-@use '../atoms/colors' as color;
-@use '../atoms/text_styles' as text;
-@use '../atoms/shadows' as shadow;
-@use '../atoms/global';
+@use "../atoms/colors" as color;
+@use "../atoms/text_styles" as text;
+@use "../atoms/shadows" as shadow;
+@use "../atoms/global";
+@use "../atoms/breakpoints";
 
 @mixin setColorScheme($background, $text, $border) {
   background-color: $background;
@@ -31,10 +32,8 @@
   }
 
   transition: color global.$animation-duration global.$easing,
-  background-color global.$animation-duration global.$easing,
-  border-color global.$animation-duration global.$easing,
-  box-shadow global.$animation-duration global.$easing,
-  transform global.$animation-duration global.$easing;
+    background-color global.$animation-duration global.$easing, border-color global.$animation-duration global.$easing,
+    box-shadow global.$animation-duration global.$easing, transform global.$animation-duration global.$easing;
 }
 
 .button_download {
@@ -54,5 +53,23 @@
     color: color.$accent-hover;
     border-color: color.$accent-hover;
     @include shadow.button-hover;
+  }
+}
+
+.button_fab {
+  position: fixed;
+  z-index: 1000;
+  right: 24px;
+  bottom: 24px;
+  border-radius: 999px;
+  @include shadow.fab;
+
+  &:hover {
+    @include shadow.fab-hover;
+  }
+
+  @media (max-width: breakpoints.$mobile) {
+    right: 16px;
+    bottom: 16px;
   }
 }

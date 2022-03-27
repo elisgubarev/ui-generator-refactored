@@ -11,11 +11,13 @@ export type Props = {
     href?: string;
     target?: string;
     className?: string;
+    fab?: boolean;
 }
 
 const Button: FC<Props> = (props) => {
     const state = useSelector((state: RootState) => state.content);
-    const className = composeClassList(`button button_${props.buttonType}`, props.className);
+    const fabClass = props.fab ? "button_fab" : "";
+    const className = composeClassList(`button button_${props.buttonType} ${fabClass}`, props.className);
 
     const renderIcon = () => {
         return (props.buttonType === 'download') && <img className="button__icon" src={download} alt="download icon" />
