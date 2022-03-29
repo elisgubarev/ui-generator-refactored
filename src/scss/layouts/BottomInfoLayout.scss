@@ -9,6 +9,11 @@
         @media (max-width: breakpoints.$desktop) {
             padding-top: 32px;
         }
+
+        @media (max-width: breakpoints.$mobile) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
     }
 
     &__row {
