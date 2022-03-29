@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.c1a7bc0b.css",
+    "main.css": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.24e12cf1.css",
     "main.js": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.b641fbc1.js",
     "static/media/material-icons-two-tone.woff": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-two-tone.169d9845612b754f6086.woff",
     "static/media/material-icons-two-tone.woff2": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-two-tone.20196d7544af60588088.woff2",
@@ -26,11 +26,11 @@
     "static/media/facebook_mono.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/facebook_mono.19219a7ada2540ede5228de5f235f144.svg",
     "static/media/quotes.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/quotes.e17e620396260bd4ef671b2e28ab026b.svg",
     "static/media/download.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/download.8194773b3ff7f9befc19fc525b284264.svg",
-    "main.c1a7bc0b.css.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.c1a7bc0b.css.map",
+    "main.24e12cf1.css.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.24e12cf1.css.map",
     "main.b641fbc1.js.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.b641fbc1.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1a7bc0b.css",
+    "static/css/main.24e12cf1.css",
     "static/js/main.b641fbc1.js"
   ]
 }
