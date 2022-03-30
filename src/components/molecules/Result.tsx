@@ -1,9 +1,9 @@
-import { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect, useRef } from 'react';
 import { RootState } from '../../app/store';
 import { useSelector } from 'react-redux';
 import { composeClassList } from '../../functions/composeClassList';
 import { generateSrc } from '../../functions/generateSrc';
-import $ from 'jquery';
+import { loading } from '../../functions/loading';
 
 type Props = {
     className?: string;
@@ -17,15 +17,18 @@ const Result: FC<Props> = (props) => {
         return (state.mockup === 0);
     }
     const [shadow, setShadow] = useState(hasShadow());
+    const isInitialMount = useRef(true);
 
     useEffect(() => {
-        $('.js-image-spinner').removeClass('hidden');
-        $('.js-loading-header').addClass('js-loading');
+        if (isInitialMount.current) {
+            isInitialMount.current = false;
+        } else {
+            loading.start();
+        }
     }, [state]);
 
     const handleOnLoad = () => {
-        $('.js-image-spinner').addClass('hidden');
-        $('.js-loading-header').removeClass('js-loading');
+        loading.finish();
         setShadow(hasShadow());
     }
 
