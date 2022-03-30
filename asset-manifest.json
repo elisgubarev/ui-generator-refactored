@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.24e12cf1.css",
-    "main.js": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.56eebf5a.js",
+    "main.js": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.a738858b.js",
     "static/media/material-icons-two-tone.woff": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-two-tone.169d9845612b754f6086.woff",
     "static/media/material-icons-two-tone.woff2": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-two-tone.20196d7544af60588088.woff2",
     "static/media/material-icons-round.woff": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/material-icons-round.da8b129efeb630b26ed6.woff",
@@ -27,10 +27,10 @@
     "static/media/quotes.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/quotes.e17e620396260bd4ef671b2e28ab026b.svg",
     "static/media/download.svg": "https://elisgubarev.github.io/UI-Generator-refactoring/static/media/download.8194773b3ff7f9befc19fc525b284264.svg",
     "main.24e12cf1.css.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/css/main.24e12cf1.css.map",
-    "main.56eebf5a.js.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.56eebf5a.js.map"
+    "main.a738858b.js.map": "https://elisgubarev.github.io/UI-Generator-refactoring/static/js/main.a738858b.js.map"
   },
   "entrypoints": [
     "static/css/main.24e12cf1.css",
-    "static/js/main.56eebf5a.js"
+    "static/js/main.a738858b.js"
   ]
 }
