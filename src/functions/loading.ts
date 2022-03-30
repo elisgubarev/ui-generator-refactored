@@ -1,14 +1,12 @@
 import $ from 'jquery';
 
-class Loading {
-    start() {
+export const loading = {
+    start: () => {
         $('.js-image-spinner').removeClass('hidden');
         $('.js-loading-header').addClass('js-loading');
-    }
-    finish() {
+    },
+    finish: () => {
         $('.js-image-spinner').addClass('hidden');
         $('.js-loading-header').removeClass('js-loading');
     }
-}
-
-export const loading = new Loading();
+};
