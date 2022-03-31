@@ -12,6 +12,7 @@ import Toggle from '../molecules/Toggle';
 import Share from '../molecules/Share';
 import H1 from '../headings/H1';
 import Button from '../molecules/Button';
+import Navbar from '../organisms/Navbar';
 
 type RowProps = {
     className?: string;
@@ -38,7 +39,7 @@ const MainLayout: FC<Props> = (props) => {
             <div className="main-layout__wrapper">
                 <Button className="mobile-only" buttonType='download' fab>Download .png</Button>
                 <Row className="mobile-only">
-                    
+                    <Navbar />
                 </Row>
                 <Row className="mobile-only main-layout__row_padding">
                     <H1Title noTip>

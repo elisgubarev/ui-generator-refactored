@@ -12,7 +12,9 @@ const Navbar: FC<Props> = (props) => {
     return (
         <div className={className}>
             <div className="navbar__wrapper">
-
+                <Logo className="navbar__logo" href={process.env.PUBLIC_URL} tagline>
+                    UI Generator
+                </Logo>
             </div>
         </div>
     );

@@ -43,6 +43,10 @@
   letter-spacing: 0.01em;
   line-height: toRem(22);
   font-family: "Montserrat", sans-serif;
+
+  @media (max-width: break.$mobile) {
+    font-size: toRem(16);
+  }
 }
 
 @mixin h1 {

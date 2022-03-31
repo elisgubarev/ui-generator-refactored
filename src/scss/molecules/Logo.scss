@@ -1,6 +1,7 @@
 @use "../atoms/colors.scss" as color;
 @use "../atoms/text_styles.scss" as text;
 @use "../atoms/global.scss";
+@use "../atoms/breakpoints.scss" as break;
 
 .logo {
     &__wrapper {
@@ -16,6 +17,11 @@
     &__image {
         margin-right: 14px;
         user-select: none;
+
+        @media (max-width: break.$mobile) {
+            margin-right: 10px;
+            width: 24px;
+        }
     }
 
     &__text {

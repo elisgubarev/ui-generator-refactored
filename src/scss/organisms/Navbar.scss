@@ -1,0 +1,28 @@
+@use "../atoms/colors.scss" as color;
+@use "../atoms/breakpoints.scss";
+
+.navbar {
+    width: 100%;
+    max-width: 640px;
+    padding: 0 16px;
+    
+
+    &__wrapper {
+        padding: 24px 16px;
+        border-bottom: 1px solid color.$neutral-4;
+
+        @media (max-width: breakpoints.$mobile) {
+            padding: 16px;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo__tagline {
+        margin-top: 0;
+    }
+}
