@@ -37,6 +37,9 @@ const MainLayout: FC<Props> = (props) => {
         <div className={className}>
             <div className="main-layout__wrapper">
                 <Button className="mobile-only" buttonType='download' fab>Download .png</Button>
+                <Row className="mobile-only">
+                    
+                </Row>
                 <Row className="mobile-only main-layout__row_padding">
                     <H1Title noTip>
                         Generate and Download Mockup UI
